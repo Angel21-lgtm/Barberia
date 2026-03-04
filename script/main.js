@@ -24,7 +24,7 @@ const cerrarVentanaServicio = document.getElementById("cerrar-ventana-servicio")
 const main = () => {
     // Cargando página web
     window.addEventListener("load", () => {
-        download(idDownload, 100, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
+        download(idDownload, 5000, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
     });
 
     // Activar y desactivar menú desplegable
