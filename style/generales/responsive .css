@@ -68,36 +68,9 @@
 /* 2. Móviles grandes / Tablets pequeñas (Landscape) */
 @media screen and (max-width: 768px) {
     /* Estilos para la mayoría de teléfonos grandes y tablets verticales [5] */
-    /* Menú desplegable */
-    nav div a {
-        font-size: 1rem !important;
-    }
-
     /* Universales */
-    p {
-        font-size: 0.8rem;
-    }
-
-    button,
-    a,
-    form {
-        font-size: 0.4rem;
-    }
-
     h1 {
         font-size: 2.3rem;
-    }
-
-    h2 {
-        font-size: 2.1rem;
-    }
-
-    h3 {
-        font-size: 0.8rem;
-    }
-
-    h4 {
-        font-size: 1.1rem;
     }
 }
 

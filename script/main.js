@@ -14,7 +14,7 @@ const activarMenuDesplegable = "activar-menu-desplegable";
 const main = () => {
     // Cargando página web
     window.addEventListener("load", () => {
-        download(idDownload, 100, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
+        download(idDownload, 8000, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
     });
 
     // Activar y desactivar menú desplegable
