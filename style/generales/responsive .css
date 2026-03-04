@@ -1,0 +1,108 @@
+/* ESTILOS PARA DISTINTAS RESOLUCIONES (RESPONSIVO) */
+
+/* 5. Pantallas extra grandes / TV */
+@media screen and (max-width: 1201px) {
+  /* Escritorios de alta resolución y monitores grandes (>1200px) [5] */
+}
+
+/* 4. Pantallas de escritorio medianas/grandes */
+@media screen and (max-width: 1025px) and (max-width: 1200px) {
+  /* Escritorios estándar (1025px - 1200px) [5] */
+}
+
+/* 3. Tablets en horizontal / Pantallas portátiles pequeñas */
+@media screen and (max-width: 980px) {
+    /* Estilos para tablets en horizontal (ej. iPad) y laptops de 13" [5] */
+    /* Menú desplegable */
+    #inicio #boton-menu-desplegable {
+        display: inline-block;
+    }
+
+    /* Nav */
+    nav {
+        width: 50% !important;
+        height: 100%;
+        flex-direction: column;
+        transform: translateX(-100%);
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: space-evenly !important;
+    }
+
+    nav div a {
+        font-size: 1.2rem !important;
+    }
+
+    /* Universales */
+    p {
+        font-size: 1rem;
+    }
+
+    button,
+    a,
+    form {
+        font-size: 0.6rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* 2. Móviles grandes / Tablets pequeñas (Landscape) */
+@media screen and (max-width: 768px) {
+    /* Estilos para la mayoría de teléfonos grandes y tablets verticales [5] */
+    /* Menú desplegable */
+    nav div a {
+        font-size: 1rem !important;
+    }
+
+    /* Universales */
+    p {
+        font-size: 0.8rem;
+    }
+
+    button,
+    a,
+    form {
+        font-size: 0.4rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+}
+
+/* 1. Móviles pequeños y medianos (Portrait) */
+@media screen and (max-width: 480px) {
+    /* Estilos para teléfonos pequeños (320px - 480px) [5] */
+    /* Menú desplegable */
+}

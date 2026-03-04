@@ -1,0 +1,43 @@
+/* ESTILOS DE LA CARGA DE LA PÁGINA WEB */
+
+/* Contenedor download */
+#download {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--blanco);
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#download > h2 {
+    color: var(--dorado);
+}
+
+#download h2::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--gris);
+    position: absolute;
+    left: 0;
+    top: calc(50% - 10px);
+    z-index: -1;
+    animation: download ease infinite 3s;
+}
+
+#download > h2 span {
+    text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 3px 3px 5px rgba(0,0,0,0.6);
+}
+
+/* Quitar download */
+.quitar-download {
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* Animación del encabezado del download */
+.animacion-letras-encabezado-download {
+    animation: animacion-letras-encabezado-download ease-in infinite 2s;
+}

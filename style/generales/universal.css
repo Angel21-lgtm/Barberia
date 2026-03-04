@@ -1,0 +1,82 @@
+/* ESTILOS UNIVERSALES PARA TODAS LAS ETIQUETAS */
+
+*, 
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    z-index: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --dorado: #C6A75E;
+    --gris: #2e2c2c;
+    --blanco: #e5e0e0;
+    --negro: #111010;
+    --brillo-dorado: radial-gradient(circle at center,#fff6c3 0%,#f5d67a 25%,#c6a75e 50%,#a67c00 75%,#7a5a00 100%);
+    --texto: #b7b2b2;
+}
+
+body {
+    background-color: var(--negro);
+    cursor: url("../../img/cursores/flecha.png"), auto;
+}
+
+#inicio,
+#servicios,
+#portafolio,
+#contacto {
+    width: 100%;
+    min-height: 100vh;
+}
+
+article {
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    color: var(--blanco);
+    padding: 1rem 3rem;
+}
+
+h3,
+h4 {
+    color: var(--dorado);
+    padding: 0.5rem 3rem;
+}
+
+p {
+    color: var(--texto);
+    padding: 2rem 3rem;
+}
+
+a,
+button,
+input[typpe="submit"] {
+    cursor: url("../../img/cursores/mano.png"), pointer;
+}
+
+a {
+    padding: 0.5rem 0.2rem;
+    transition: all 0.3s;
+    color: var(--blanco);
+}
+
+button {
+    background-color: var(--dorado);
+    color: var(--negro);
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 1rem 0.2rem;
+    transition: all 0.3s;
+}
+
+strong {
+    color: var(--dorado);
+}

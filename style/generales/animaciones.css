@@ -1,0 +1,107 @@
+/* ESTILOS DE LAS ANIMACIONES DE LA WEB */
+
+/* Animaciones de enlaces y botones */
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.6),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.6s ease;
+}
+
+button:hover::before {
+    left: 130%;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+    color: var(--blanco);
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/* Animaciones del download */
+@keyframes download {
+    0% {
+        left: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        left: 100%;
+        transform: scale(1.5);
+    }
+
+    100% {
+        left: 0;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes animacion-letras-encabezado-download {
+    0% {
+        transform: translateY(0%) scale(1);
+    }
+
+    50% {
+        transform: translateY(-50%) scale(1.1);
+    }
+
+    100% {
+        transform: translateY(0%) scale(1);
+    }
+}
+
+/* Animaciones del nav */
+@keyframes brillo-nav {
+    0% {
+        background-position: 0% 40%;
+    }
+
+    50% {
+        background-position: 40% 80%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+nav div a:hover {
+    transform: scaleY(2.7) scaleX(0.9);
+}
+
+.btn-nav-on:hover {
+    transform: scaleY(1.7) scaleX(0.9);
+}
+
+.btn-nav-off:hover {
+    color: var(--dorado);
+}
+
+.btn-nav-off:hover:before {
+    transform: translateX(0);
+}
+
+#inicio article ul li:hover {
+    background-color: var(--blanco);
+    transform: scale(1.05);
+}
+
+/* Animaciones de la sección servicios */
+#servicios article > div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px var(--gris);
+}

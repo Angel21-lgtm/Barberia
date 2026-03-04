@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería</title>
+    <!-- ícono de la web -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- Librerías -->
+    <link rel="stylesheet" href="./style/librerías/display.css">
+    <link rel="stylesheet" href="./style/librerías/flex-box.css">
+    <link rel="stylesheet" href="./style/librerías/grid.css">
+    <link rel="stylesheet" href="./style/librerías/position.css">
+    <!-- Generales -->
+    <link rel="stylesheet" href="./style/generales/animaciones.css">
+    <link rel="stylesheet" href="./style/generales/universal.css">
+    <link rel="stylesheet" href="./style/generales/fuentes.css">
+    <link rel="stylesheet" href="./style/generales/responsive .css">
+    <!-- Secciones -->
+    <link rel="stylesheet" href="./style/secciones/download.css">
+    <link rel="stylesheet" href="./style/secciones/inicio(header).css">
+    <link rel="stylesheet" href="./style/secciones/servicios(main).css">
+</head>
+<body>
+    <!---------------------------------------------------------->
+    <!-- Carga de página web (download) -->
+     <div class="position-fixed display-flex justify-content-center align-items-center" id="download">
+        <h2 class="position-relative" data-text="Barbería">
+            <span class="letras-encabezado-download display-inline-block">B</span><span class="letras-encabezado-download display-inline-block">a</span><span class="letras-encabezado-download display-inline-block">r</span><span class="letras-encabezado-download display-inline-block">b</span><span class="letras-encabezado-download display-inline-block">e</span><span class="letras-encabezado-download display-inline-block">r</span><span class="letras-encabezado-download display-inline-block">í</span><span class="letras-encabezado-download display-inline-block">a</span>
+        </h2>
+     </div>
+    <!-- Carga de página web (download) -->
+    <!---------------------------------------------------------->
+
+    <!---------------------------------------------------------->
+    <!-- Cabecera de la web, primera secció (header, inicio) -->
+    <header id="inicio" class="display-flex">
+        <!-- Adorno -->
+         <div class="adorno position-absolute"></div>
+        <!-- Adorno -->
+
+        <!-- Botón desplegable -->
+        <button class="position-fixed display-none" id="boton-menu-desplegable">
+            ☰
+        </button>
+        <!-- Botón desplegable -->
+
+        <!-- Navegador de secciones -->
+        <nav id="menu" class="position-fixed display-flex align-items-center justify-content-space-between">
+            <div class="display-flex justify-content-center align-items-center">
+                <img class="display-block" src="./img/nav/poste-de-barbero.png" alt="Logotipo">
+
+                <a class="position-relative" href="#inicio">
+                    Barbería
+                </a>
+            </div>
+
+            <ul class="display-flex justify-content-flex-end align-items-center">
+                <li>
+                    <a class="btn-nav btn-nav-on position-relative display-inline-block" title="Ir al Inicio de la web" href="#inicio">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a class="btn-nav-off btn-nav position-relative display-inline-block" title="Ir a nuestros Servicios" href="#servicios">
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
+                    <a class="btn-nav-off btn-nav position-relative display-inline-block" target="_blank" title="Ir a nuestros Productos" href="./productos.html">
+                        Productos
+                    </a>
+                </li>
+
+                <li>
+                    <a class="btn-nav-off btn-nav position-relative display-inline-block" title="Ir al Portafolio de trabajos" href="#portafolio">
+                        Portafolio
+                    </a>
+                </li>
+
+                <li>
+                    <a class="btn-nav-off btn-nav position-relative display-inline-block" title="Ir a la sección de Contacto" href="#contacto">
+                        Contacto
+                    </a>
+                </li>
+
+                <li>
+                    <button class="position-relative">
+                        Descarga catálogo de cortes
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <!-- Navegador de secciones -->
+
+        <!-- Contenido de la cabecera -->
+         <article class="align-content-end">
+            <p><strong>Profesionales en estilismo masculino</strong></p>
+
+            <h1>Ejemplo de título de la <strong>barbería</strong></h1>
+
+            <ul class="display-flex align-items-center">
+                <li class="display-flex justify-content-center align-items-center">
+                    <a class="display-flex justify-content-center align-items-center" title="¡Visitanos en TikTok!" href="#">
+                        <img src="./img/redes sociales/tik-tok.png" alt="TikTok">
+                    </a>
+                </li>
+
+                <li class="display-flex justify-content-center align-items-center">
+                    <a class="display-flex justify-content-center align-items-center" title="¡Visitanos en Instagram!" href="#">
+                        <img src="./img/redes sociales/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+
+                <li class="display-flex justify-content-center align-items-center">
+                    <a class="display-flex justify-content-center align-items-center" title="¡Visitanos en Facebook!" href="#">
+                        <img src="./img/redes sociales/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+            </ul>
+         </article>
+         <!-- Contenido de la cabecera -->
+    </header>
+    <!-- Cabecera de la web, primera sección (header, inicio) -->
+    <!---------------------------------------------------------->
+
+    <!---------------------------------------------------------->
+    <!-- Sección principal de los servicios que se ofrecen -->
+    <main id="servicios">
+        <!-- Descripción y título de servicios -->
+        <h2>Nuestros servicios profesionales</h2>
+        <p>Somos la casa de <strong>barberos</strong> profesionales</p>
+        <!-- Descripción y título de servicios -->
+        
+        <!-- Artículo de cards de servicios -->
+        <article class="display-grid grid-columns-minmax-250px-1fr">
+            <div class="position-relative display-flex flex-direction-column align-items-center justify-content-center">
+                <div class="display-flex justify-content-center align-items-center">
+                    <img src="./img/servicios/tijeras.png" alt="Tijeras">
+                </div>
+
+                <h3>Corte con Tijeras y Navaja</h3>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <button class="display-inline-block">
+                    Leer más
+                </button>
+
+                <h4>$180</h4>
+            </div>
+
+            <div class="position-relative display-flex flex-direction-column align-items-center justify-content-center">
+                <div class="display-flex justify-content-center align-items-center">
+                    <img src="./img/servicios/máquina-de-afeitar.png" alt="Máquina">
+                </div>
+                <h3>Corte Moderno a Máquina</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="display-inline-block">
+                    Leer más
+                </button>
+                <h4>$150</h4>
+            </div>
+
+            <div class="position-relative display-flex flex-direction-column align-items-center justify-content-center">
+                <div class="display-flex justify-content-center align-items-center">
+                    <img src="./img/servicios/navaja-de-afeitar.png" alt="Navaja">
+                </div>
+                <h3>Arreglo estético de Barba</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="display-inline-block">
+                    Leer más
+                </button>
+                <h4>$120</h4>
+            </div>
+
+            <div class="position-relative display-flex flex-direction-column align-items-center justify-content-center">
+                <div class="display-flex justify-content-center align-items-center">
+                    <img src="./img/servicios/mascarilla.png" alt="Mascarilla">
+                </div>
+                <h3>Mascarilla</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="display-inline-block">
+                    Leer más
+                </button>
+                <h4>$130</h4>
+            </div>
+        </article>
+    </main>
+    <!-- Sección principal de los servicios que se ofrecen -->
+    <!---------------------------------------------------------->
+
+    <!---------------------------------------------------------->
+    <!-- Sección de portafolio de proyectos -->
+    <section id="portafolio"></section>
+    <!-- Sección de portafolio de proyectos -->
+    <!---------------------------------------------------------->
+
+    <!---------------------------------------------------------->
+    <!-- Sección para contacto directo -->
+     <footer id="contacto"></footer>
+     <!-- Sección para contacto directo -->
+    <!---------------------------------------------------------->
+
+    <!---------------------------------------------------------->
+    <!-- Script JavaScript -->
+    <script type="module" src="./script/main.js"></script>
+    <!-- Script JavaScript -->
+    <!---------------------------------------------------------->
+</body>
+</html>

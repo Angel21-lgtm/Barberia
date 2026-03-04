@@ -1,0 +1,39 @@
+/* ESTILOS DE LA SECCIÓN PRINCIPAL SERVICIOS (main) */
+
+/* Artículo de servicios */
+#servicios article {
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+#servicios article > div {
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    border: 0.1px solid var(--gris);
+    gap: 5px;
+    transition: all 0.2s;
+    overflow: hidden;
+    background-image: url("../../img/inicio/inicio\(header\).jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#servicios article > div > div {
+    width: 70px;
+    height: 70px;
+    background-color: var(--gris);
+    border-radius: 35px;
+}
+
+#servicios article > div > div > img {
+    width: 50px;
+    height: 50px;
+}
+
+#servicios article div h3,
+#servicios article div p,
+#servicios article div h4 {
+    text-align: center;
+    text-shadow: 1px 1px 3px var(--negro);
+}

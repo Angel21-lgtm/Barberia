@@ -1,0 +1,56 @@
+/* ESTILOS DE LAS FUENTES DE LA WEB */
+
+/* Encabezados */
+@font-face {
+    font-family: "Encabezado";
+    src: url("../../fonts/Archivo_Black/ArchivoBlack-Regular.ttf");
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Encabezado";
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-size: 3rem;
+    transform: scaleY(1.5);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* Párrafos, enlaces, botones, formularios y span */
+@font-face {
+    font-family: "Párrafos, enlaces, botones y formularios";
+    src: url("../../fonts/Rubik/Rubik-VariableFont_wght.ttf");
+}
+
+p,
+a,
+button,
+form {
+    font-family: "Párrafos, enlaces, botones y formularios";
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+button,
+a,
+form {
+    font-size: 0.8rem;
+}
