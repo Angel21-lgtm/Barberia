@@ -14,9 +14,9 @@
     gap: 5px;
     transition: all 0.2s;
     overflow: hidden;
-    background-image: url("../../img/inicio/inicio\(header\).jpg");
     background-position: center;
     background-size: cover;
+    opacity: 0.5;
 }
 
 #servicios article > div > div {
@@ -35,5 +35,26 @@
 #servicios article div p,
 #servicios article div h4 {
     text-align: center;
-    text-shadow: 1px 1px 3px var(--negro);
+    text-shadow: 1px 1px 3px var(--negro), 2px 2px 4px var(--negro);
+}
+
+/* Ventana del servicio */
+#leer-mas-servicio {
+    min-width: 100%;
+    min-height: 100vh;
+    left: -100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+#cerrar-ventana-servicio {
+    left: 5%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.activar-leer-mas-servicio {
+    transform: translateX(100%);
 }

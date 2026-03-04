@@ -8,12 +8,7 @@ button::before {
     left: -100%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,0.6),
-        transparent
-    );
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
     transform: skewX(-20deg);
     transition: left 0.6s ease;
 }
@@ -92,7 +87,7 @@ nav div a:hover {
 }
 
 .btn-nav-off:hover:before {
-    transform: translateX(0);
+    transform: translateX(10%);
 }
 
 #inicio article ul li:hover {
@@ -102,6 +97,7 @@ nav div a:hover {
 
 /* Animaciones de la sección servicios */
 #servicios article > div:hover {
-    transform: scale(1.02);
+    transform: scale(1.07);
     box-shadow: 0 0 5px var(--gris);
+    opacity: 1;
 }

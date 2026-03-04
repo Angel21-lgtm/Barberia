@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbería</title>
     <!-- ícono de la web -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logotipo/logotipo.png" type="image/x-icon">
     <!-- Librerías -->
     <link rel="stylesheet" href="./style/librerías/display.css">
     <link rel="stylesheet" href="./style/librerías/flex-box.css">
@@ -128,65 +128,21 @@
 
     <!---------------------------------------------------------->
     <!-- Sección principal de los servicios que se ofrecen -->
-    <main id="servicios">
+    <main id="servicios" class="display-flex flex-direction-column position-relative">
         <!-- Descripción y título de servicios -->
-        <h2>Nuestros servicios profesionales</h2>
+        <h2 class="">Nuestros servicios profesionales</h2>
         <p>Somos la casa de <strong>barberos</strong> profesionales</p>
         <!-- Descripción y título de servicios -->
         
         <!-- Artículo de cards de servicios -->
-        <article class="display-grid grid-columns-minmax-250px-1fr">
-            <div class="position-relative display-flex flex-direction-column align-items-center justify-content-center">
-                <div class="display-flex justify-content-center align-items-center">
-                    <img src="./img/servicios/tijeras.png" alt="Tijeras">
-                </div>
+        <article id="articulo-de-servicios" class="display-grid grid-columns-minmax-250px-1fr">
+        </article>
+        <!-- Artículo de cards de servicios -->
 
-                <h3>Corte con Tijeras y Navaja</h3>
-
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <button class="display-inline-block position-relative">
-                    Leer más
-                </button>
-
-                <h4>$180</h4>
-            </div>
-
-            <div class="position-relative display-flex flex-direction-column align-items-center justify-content-center">
-                <div class="display-flex justify-content-center align-items-center">
-                    <img src="./img/servicios/máquina-de-afeitar.png" alt="Máquina">
-                </div>
-                <h3>Corte Moderno a Máquina</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="display-inline-block position-relative">
-                    Leer más
-                </button>
-                <h4>$150</h4>
-            </div>
-
-            <div class="position-relative display-flex flex-direction-column align-items-center justify-content-center">
-                <div class="display-flex justify-content-center align-items-center">
-                    <img src="./img/servicios/navaja-de-afeitar.png" alt="Navaja">
-                </div>
-                <h3>Arreglo estético de Barba</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="display-inline-block position-relative">
-                    Leer más
-                </button>
-                <h4>$120</h4>
-            </div>
-
-            <div class="position-relative display-flex flex-direction-column align-items-center justify-content-center">
-                <div class="display-flex justify-content-center align-items-center">
-                    <img src="./img/servicios/mascarilla.png" alt="Mascarilla">
-                </div>
-                <h3>Mascarilla</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="display-inline-block position-relative">
-                    Leer más
-                </button>
-                <h4>$130</h4>
-            </div>
+        <article class="position-fixed" id="leer-mas-servicio">
+            <button class="display-flex justify-content-center align-items-center position-absolute" id="cerrar-ventana-servicio">
+                X
+            </button>
         </article>
     </main>
     <!-- Sección principal de los servicios que se ofrecen -->

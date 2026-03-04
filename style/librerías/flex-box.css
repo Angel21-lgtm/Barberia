@@ -39,6 +39,10 @@
     align-content: end;
 }
 
+.align-content-center {
+    align-content: center;
+}
+
 /* flex-wrap */
 .flex-wrap-wrap {
     flex-wrap: wrap;
