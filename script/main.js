@@ -20,12 +20,12 @@ import botonLeerMas from "./servicios/botonLeerMas.js";
 const idBotonesServicios = backEndServicios.idBoton;
 const leerMasServicio = document.getElementById("leer-mas-servicio");
 const cerrarVentanaServicio = document.getElementById("cerrar-ventana-servicio");
+// Importando funciones de animaciones
+import scrollOpacity from "../style/generales/animaciones.js";
 
 const main = () => {
     // Cargando página web
-    window.addEventListener("load", () => {
-        download(idDownload, 5000, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
-    });
+    download(idDownload, 5000, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
 
     // Activar y desactivar menú desplegable
     menuDesplegable(idBotonMenuDesplegable, idMenu, activarMenuDesplegable);
@@ -35,6 +35,13 @@ const main = () => {
 
     // Activando botones de los servicios (Leer más)
     botonLeerMas(idBotonesServicios, leerMasServicio, cerrarVentanaServicio, "activar-leer-mas-servicio");
+
+    // Animaciones del window
+    const contenedoresServicios = document.querySelectorAll(".servicio");
+    scrollOpacity(contenedoresServicios, "opacity-servicio");
 }
 
-main();
+// Ejecutando main
+window.addEventListener("load", () => {
+    main();
+});

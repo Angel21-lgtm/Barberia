@@ -4,10 +4,9 @@
 #servicios article {
     gap: 20px;
     width: 70%;
-    margin: auto;
 }
 
-#servicios article > div {
+#servicios article > .servicio {
     padding: 2rem 1rem;
     border-radius: 10px;
     border: 0.1px solid var(--gris);
@@ -19,21 +18,25 @@
     opacity: 0.5;
 }
 
-#servicios article > div > div {
+.opacity-servicio {
+    opacity: 1 !important;
+}
+
+#servicios article > .servicio > div {
     width: 70px;
     height: 70px;
     background-color: var(--gris);
     border-radius: 35px;
 }
 
-#servicios article > div > div > img {
+#servicios article > .servicio > div > img {
     width: 50px;
     height: 50px;
 }
 
-#servicios article div h3,
-#servicios article div p,
-#servicios article div h4 {
+#servicios article .servicio h3,
+#servicios article .servicio p,
+#servicios article .servicio h4 {
     text-align: center;
     text-shadow: 1px 1px 3px var(--negro), 2px 2px 4px var(--negro);
 }
