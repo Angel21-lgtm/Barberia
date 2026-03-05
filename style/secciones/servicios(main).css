@@ -4,6 +4,7 @@
 #servicios article {
     gap: 20px;
     width: 70%;
+    place-items: center;
 }
 
 #servicios article > .servicio {
