@@ -48,8 +48,8 @@
     height: 50px;
     padding: 0;
     font-size: 2rem;
-    right: 25px;
-    top: 25px;
+    right: 5%;
+    top: 10%;
     z-index: 999;
     font-weight: 900;
 }
@@ -154,6 +154,10 @@ nav ul {
     height: 2px;
     background-color: var(--dorado);
     transform: translateX(-100%);
+}
+
+#tienda {
+    color: var(--dorado);
 }
 
 /* Artículo del encabezado y contenido */

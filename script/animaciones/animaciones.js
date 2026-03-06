@@ -17,7 +17,7 @@ const scrollOpacity = (elementos, clase) => {
             elementos.forEach(elemento => {
                 elemento.classList.remove(clase);
             });
-        }, 200);
+        }, 300);
 
     });
 

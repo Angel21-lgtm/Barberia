@@ -10,7 +10,9 @@ const servicios = (contenedor) => {
 
     for(let posicion = 0; posicion <backEndServicios.longitud; posicion++) {
         contenido += `
-            <div style="background-image: url(${backEndServicios.imgServicio[posicion]});" class="servicio position-relative display-flex flex-direction-column align-items-center justify-content-center">
+            <div class="servicio position-relative display-flex flex-direction-column align-items-center justify-content-center">
+                <div style="background-image: url(${backEndServicios.imgServicio[posicion]});" class="fondo-servicio position-absolute">
+                </div>
                 <div class="display-flex justify-content-center align-items-center">
                     <img src=${backEndServicios.pngServicios[posicion]} alt=${backEndServicios.alts[posicion]}>
                 </div>
