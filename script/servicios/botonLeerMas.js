@@ -14,7 +14,7 @@ const botonLeerMas = (contenedor, botonCerar, clase) => {
         idBoton.addEventListener("click", () => {
             contenedor.classList.toggle(clase);
             textoLeerMas.innerText = backEndServicios[i].textoLeerMas;
-            tituloLeerMas.innerText = backEndServicios[i].tituloLeerMas;
+            tituloLeerMas.innerText = backEndServicios[i].encabezadoServicio;
         });
     }
 

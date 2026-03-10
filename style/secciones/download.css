@@ -10,7 +10,7 @@
     z-index: 1000;
 }
 
-#download > h2 {
+#download>h2 {
     color: var(--dorado);
 }
 
@@ -27,8 +27,9 @@
     animation: download ease infinite 3s;
 }
 
-#download > h2 span {
-    text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 3px 3px 5px rgba(0,0,0,0.6);
+#download>h2 span {
+    text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 3px 3px 5px rgba(0, 0, 0, 0.6);
+    background-color: red;
 }
 
 /* Quitar download */

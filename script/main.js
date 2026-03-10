@@ -25,7 +25,7 @@ import nav from "./inicio/nav.js";
 
 const main = () => {
     // Cargando página web
-    download(idDownload, 10, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
+    download(idDownload, 5000, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
 
     // Activar y desactivar menú desplegable
     menuDesplegable(idBotonMenuDesplegable, idMenu, activarMenuDesplegable);

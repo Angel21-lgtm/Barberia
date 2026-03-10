@@ -10,7 +10,6 @@ const backEndServiciosCards = [
         textoDelServicio: "Barba elegante, estilo moderno o clásico.",
         idBoton: "servicio-1",
         precios: "$120",
-        tituloLeerMas: "Título 1",
         textoLeerMas: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis autem sed, fugiat sapiente nihil recusandae voluptatibus vel id nesciunt pariatur unde, eius nisi consectetur animi magni cumque molestias inventore officia.",
     },
     {
@@ -21,7 +20,6 @@ const backEndServiciosCards = [
         textoDelServicio: "Realizamos cortes artesanales clásicos(tijeras y navaja).",
         idBoton: "servicio-2",
         precios: "$180",
-        tituloLeerMas: "Título 2",
         textoLeerMas: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis autem sed, fugiat sapiente nihil recusandae voluptatibus vel id nesciunt pariatur unde, eius nisi consectetur animi magni cumque molestias inventore officia.",
     },
     {
@@ -32,7 +30,6 @@ const backEndServiciosCards = [
         textoDelServicio: "Corte completo a: navaja, tijeras y máquina.",
         idBoton: "servicio-3",
         precios: "$150",
-        tituloLeerMas: "Título 3",
         textoLeerMas: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis autem sed, fugiat sapiente nihil recusandae voluptatibus vel id nesciunt pariatur unde, eius nisi consectetur animi magni cumque molestias inventore officia.",
     },
     {
@@ -43,7 +40,6 @@ const backEndServiciosCards = [
         textoDelServicio: "Mascarillas naturales para velleza masculina.",
         idBoton: "servicio-4",
         precios: "$130",
-        tituloLeerMas: "Título 4",
         textoLeerMas: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis autem sed, fugiat sapiente nihil recusandae voluptatibus vel id nesciunt pariatur unde, eius nisi consectetur animi magni cumque molestias inventore officia.",
     },
 ];

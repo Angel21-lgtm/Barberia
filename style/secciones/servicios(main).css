@@ -65,6 +65,7 @@
 
 #servicios>#leer-mas-servicio>.contenedor-datos-leer-mas {
     max-width: 800px;
+    place-items: center;
 }
 
 #cerrar-ventana-servicio {

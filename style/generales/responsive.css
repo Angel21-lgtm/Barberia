@@ -2,17 +2,18 @@
 
 /* 5. Pantallas extra grandes / TV */
 @media screen and (max-width: 1201px) {
-  /* Escritorios de alta resolución y monitores grandes (>1200px) [5] */
+    /* Escritorios de alta resolución y monitores grandes (>1200px) [5] */
 }
 
 /* 4. Pantallas de escritorio medianas/grandes */
 @media screen and (max-width: 1025px) and (max-width: 1200px) {
-  /* Escritorios estándar (1025px - 1200px) [5] */
+    /* Escritorios estándar (1025px - 1200px) [5] */
 }
 
 /* 3. Tablets en horizontal / Pantallas portátiles pequeñas */
 @media screen and (max-width: 980px) {
     /* Estilos para tablets en horizontal (ej. iPad) y laptops de 13" [5] */
+
     /* Menú desplegable */
     #inicio #boton-menu-desplegable {
         display: inline-block;
@@ -24,6 +25,14 @@
         height: 100%;
         flex-direction: column;
         transform: translateX(-100%);
+    }
+
+    nav div {
+        flex-wrap: wrap;
+    }
+
+    nav div img {
+        margin: 10px;
     }
 
     nav ul {
@@ -67,6 +76,7 @@
 
 /* 2. Móviles grandes / Tablets pequeñas (Landscape) */
 @media screen and (max-width: 768px) {
+
     /* Estilos para la mayoría de teléfonos grandes y tablets verticales [5] */
     /* Universales */
     h1 {
