@@ -8,7 +8,7 @@ const letrasEncabezadoDownload = document.querySelectorAll(".letras-encabezado-d
 // Importando función del menú desplegable
 import menuDesplegable from "./inicio/menuDesplegable.js";
 const idBotonMenuDesplegable = document.getElementById("boton-menu-desplegable");
-const idMenu =document.getElementById("menu");
+const idMenu = document.getElementById("menu");
 const activarMenuDesplegable = "activar-menu-desplegable";
 // Importando función servicios
 import servicios from "./servicios/servicios.js";
@@ -22,6 +22,7 @@ const leerMasServicio = document.getElementById("leer-mas-servicio");
 const cerrarVentanaServicio = document.getElementById("cerrar-ventana-servicio");
 // Importando funciones de animaciones
 import scrollOpacity from "./animaciones/animaciones.js";
+import nav from "./animaciones/nav.js";
 
 const main = () => {
     // Cargando página web
@@ -39,6 +40,10 @@ const main = () => {
     // Animaciones del window
     const contenedoresImagenServicios = document.querySelectorAll(".fondo-servicio");
     scrollOpacity(contenedoresImagenServicios, "opacity-servicio");
+
+    const botonesDelNav = document.querySelectorAll(".btn-nav");
+    const secciones = document.querySelectorAll(".secciones");
+    nav(botonesDelNav, "btn-nav-on", "btn-nav-off", secciones);
 }
 
 // Ejecutando main

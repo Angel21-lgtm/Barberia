@@ -3,8 +3,7 @@
 /* Artículo de servicios */
 #servicios article {
     gap: 20px;
-    width: 70%;
-    min-width: 300px;
+    max-width: 1200px;
     place-items: center;
     margin: auto;
 }
@@ -55,7 +54,7 @@
 
 /* Ventana del servicio */
 #leer-mas-servicio {
-    min-width: 100%;
+    width: 100% !important;
     min-height: 100vh;
     left: -100%;
     top: 0;
