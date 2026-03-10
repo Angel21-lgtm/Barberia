@@ -14,19 +14,18 @@ const activarMenuDesplegable = "activar-menu-desplegable";
 import servicios from "./servicios/servicios.js";
 const articuloDeServicios = document.getElementById("articulo-de-servicios");
 // Importando back end servicios
-import backEndServicios from "./servicios/backEndServicios.js";
+import backEndServiciosCards from "./servicios/backEndServicios.js";
 // Importando botón de leer en servicios
 import botonLeerMas from "./servicios/botonLeerMas.js";
-const idBotonesServicios = backEndServicios.idBoton;
 const leerMasServicio = document.getElementById("leer-mas-servicio");
 const cerrarVentanaServicio = document.getElementById("cerrar-ventana-servicio");
 // Importando funciones de animaciones
 import scrollOpacity from "./animaciones/animaciones.js";
-import nav from "./animaciones/nav.js";
+import nav from "./inicio/nav.js";
 
 const main = () => {
     // Cargando página web
-    download(idDownload, 5000, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
+    download(idDownload, 10, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
 
     // Activar y desactivar menú desplegable
     menuDesplegable(idBotonMenuDesplegable, idMenu, activarMenuDesplegable);
@@ -35,7 +34,7 @@ const main = () => {
     servicios(articuloDeServicios);
 
     // Activando botones de los servicios (Leer más)
-    botonLeerMas(idBotonesServicios, leerMasServicio, cerrarVentanaServicio, "activar-leer-mas-servicio");
+    botonLeerMas(leerMasServicio, cerrarVentanaServicio, "activar-leer-mas-servicio");
 
     // Animaciones del window
     const contenedoresImagenServicios = document.querySelectorAll(".fondo-servicio");

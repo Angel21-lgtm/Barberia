@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbería</title>
+    <title>NEFTER</title>
     <!-- ícono de la web -->
-    <link rel="shortcut icon" href="./img/logotipo/logotipo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logotipo/logotipo-3.png" type="image/x-icon">
     <!-- Librerías -->
     <link rel="stylesheet" href="./style/librerías/display.css">
     <link rel="stylesheet" href="./style/librerías/flex-box.css">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./style/generales/animaciones.css">
     <link rel="stylesheet" href="./style/generales/universal.css">
     <link rel="stylesheet" href="./style/generales/fuentes.css">
+    <link rel="stylesheet" href="./style/generales/reciclados.css">
     <link rel="stylesheet" href="./style/generales/responsive.css">
     <!-- Secciones -->
     <link rel="stylesheet" href="./style/secciones/download.css">
@@ -27,15 +28,15 @@
     <!---------------------------------------------------------->
     <!-- Carga de página web (download) -->
     <div class="position-fixed display-flex justify-content-center align-items-center" id="download">
-        <h2 class="position-relative" data-text="Barbería">
-            <span class="letras-encabezado-download display-inline-block">B</span><span
-                class="letras-encabezado-download display-inline-block">a</span><span
-                class="letras-encabezado-download display-inline-block">r</span><span
-                class="letras-encabezado-download display-inline-block">b</span><span
-                class="letras-encabezado-download display-inline-block">e</span><span
-                class="letras-encabezado-download display-inline-block">r</span><span
-                class="letras-encabezado-download display-inline-block">í</span><span
-                class="letras-encabezado-download display-inline-block">a</span>
+        <h2 class="position-relative">
+            <span class="letras-encabezado-download display-inline-block">C</span>
+            <span class="letras-encabezado-download display-inline-block">a</span>
+            <span class="letras-encabezado-download display-inline-block">r</span>
+            <span class="letras-encabezado-download display-inline-block">g</span>
+            <span class="letras-encabezado-download display-inline-block">a</span>
+            <span class="letras-encabezado-download display-inline-block">n</span>
+            <span class="letras-encabezado-download display-inline-block">d</span>
+            <span class="letras-encabezado-download display-inline-block">o</span>
         </h2>
     </div>
     <!-- Carga de página web (download) -->
@@ -49,7 +50,7 @@
         <!-- Adorno -->
 
         <!-- Botón desplegable -->
-        <button class="position-fixed display-none" id="boton-menu-desplegable">
+        <button class="position-fixed display-none btn-2" id="boton-menu-desplegable">
             ☰
         </button>
         <!-- Botón desplegable -->
@@ -57,10 +58,10 @@
         <!-- Navegador de secciones -->
         <nav id="menu" class="position-fixed display-flex align-items-center justify-content-space-between">
             <div class="display-flex justify-content-center align-items-center">
-                <img class="display-block" src="./img/nav/poste-de-barbero.png" alt="Logotipo">
+                <img class="display-block" src="./img/logotipo/logotipo-1.png" alt="Logotipo">
 
                 <a class="position-relative" href="#inicio">
-                    Barbería
+                    NEFHTER
                 </a>
             </div>
 
@@ -101,7 +102,7 @@
                 </li>
 
                 <li>
-                    <button class="position-relative">
+                    <button class="position-relative btn-1">
                         Descarga catálogo de cortes
                     </button>
                 </li>
@@ -156,11 +157,17 @@
         </article>
         <!-- Artículo de cards de servicios -->
 
-        <article class="position-fixed" id="leer-mas-servicio">
-            <button class="display-flex justify-content-center align-items-center position-absolute"
+        <article class="position-fixed display-flex justify-content-center align-items-center" id="leer-mas-servicio">
+            <button class="display-flex justify-content-center align-items-center position-absolute btn-2"
                 id="cerrar-ventana-servicio">
                 X
             </button>
+            <div class="contenedor-datos-leer-mas display-grid">
+                <h3 class="titulo-leer-mas">
+                </h3>
+                <p class="texto-leer-mas">
+                </p>
+            </div>
         </article>
     </main>
     <!-- Sección principal de los servicios que se ofrecen -->

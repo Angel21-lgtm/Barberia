@@ -1,7 +1,6 @@
 "use strict";
 
 const download = (id, tiempoDownload, clase1, clase2, letrasEncabezadoDownload, tiempoLetras) => {
-    const body = document.querySelector("body");
     letrasEncabezadoDownload.forEach((letra, index) => {
         setTimeout(() => {
             letra.classList.add(clase2);

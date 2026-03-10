@@ -53,13 +53,17 @@
 }
 
 /* Ventana del servicio */
-#leer-mas-servicio {
-    width: 100% !important;
+#servicios>#leer-mas-servicio {
+    min-width: 100%;
     min-height: 100vh;
     left: -100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.3s;
+}
+
+#servicios>#leer-mas-servicio>.contenedor-datos-leer-mas {
+    max-width: 800px;
 }
 
 #cerrar-ventana-servicio {
@@ -70,5 +74,5 @@
 }
 
 .activar-leer-mas-servicio {
-    transform: translateX(100%);
+    left: 0 !important;
 }
