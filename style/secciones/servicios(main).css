@@ -56,8 +56,9 @@
 #servicios>#leer-mas-servicio {
     min-width: 100%;
     min-height: 100vh;
-    left: -100%;
+    left: 0;
     top: 0;
+    transform: translateX(-100%);
     background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.3s;
 }
@@ -74,5 +75,5 @@
 }
 
 .activar-leer-mas-servicio {
-    left: 0 !important;
+    transform: translateX(0) !important;
 }
