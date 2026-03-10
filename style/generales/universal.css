@@ -1,10 +1,10 @@
 /* ESTILOS UNIVERSALES PARA TODAS LAS ETIQUETAS */
 
-*, 
+*,
 html,
 *::before,
-*::after{
-    box-sizing:border-box;
+*::after {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -20,7 +20,7 @@ html,
     --gris: #2e2c2c;
     --blanco: #e5e0e0;
     --negro: #111010;
-    --brillo-dorado: radial-gradient(circle at center,#fff6c3 0%,#f5d67a 25%,#c6a75e 50%,#a67c00 75%,#7a5a00 100%);
+    --brillo-dorado: radial-gradient(circle at center, #fff6c3 0%, #f5d67a 25%, #c6a75e 50%, #a67c00 75%, #7a5a00 100%);
     --texto: #b7b2b2;
 }
 
