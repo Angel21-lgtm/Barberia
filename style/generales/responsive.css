@@ -29,6 +29,7 @@
 
     nav div {
         flex-wrap: wrap;
+        width: auto;
     }
 
     nav div img {
@@ -76,8 +77,8 @@
 
 /* 2. Móviles grandes / Tablets pequeñas (Landscape) */
 @media screen and (max-width: 768px) {
-
     /* Estilos para la mayoría de teléfonos grandes y tablets verticales [5] */
+
     /* Universales */
     h1 {
         font-size: 2.3rem;
@@ -86,6 +87,31 @@
 
 /* 1. Móviles pequeños y medianos (Portrait) */
 @media screen and (max-width: 480px) {
+
     /* Estilos para teléfonos pequeños (320px - 480px) [5] */
-    /* Menú desplegable */
+
+    /* Universales */
+    p {
+        padding: 1;
+        text-align: center;
+    }
+
+    h1 {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
 }
