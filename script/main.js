@@ -5,27 +5,32 @@ const idDownload = document.getElementById("download");
 const quitarDownload = "quitar-download";
 const animacionEncabezadoDownload = "animacion-letras-encabezado-download";
 const letrasEncabezadoDownload = document.querySelectorAll(".letras-encabezado-download");
+// Función para redireccionar a WhatsApp
+import irAWhatsApp from "./inicio/irAWhatsApp.js";
+const btnWhatsApp = document.getElementById("btn-whatsapp");
 // Importando función del menú desplegable
 import menuDesplegable from "./inicio/menuDesplegable.js";
 const idBotonMenuDesplegable = document.getElementById("boton-menu-desplegable");
 const idMenu = document.getElementById("menu");
 const activarMenuDesplegable = "activar-menu-desplegable";
+// Importando función para cambio de secciones del nav (menú)
+import nav from "./inicio/nav.js";
 // Importando función servicios
 import servicios from "./servicios/servicios.js";
 const articuloDeServicios = document.getElementById("articulo-de-servicios");
-// Importando back end servicios
-import backEndServiciosCards from "./servicios/backEndServicios.js";
 // Importando botón de leer en servicios
 import botonLeerMas from "./servicios/botonLeerMas.js";
 const leerMasServicio = document.getElementById("leer-mas-servicio");
 const cerrarVentanaServicio = document.getElementById("cerrar-ventana-servicio");
 // Importando funciones de animaciones
 import scrollOpacity from "./animaciones/animaciones.js";
-import nav from "./inicio/nav.js";
 
 const main = () => {
     // Cargando página web
-    download(idDownload, 5000, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
+    download(idDownload, 10, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
+
+    // Activar evento para ir a WhatsApp
+    irAWhatsApp(btnWhatsApp);
 
     // Activar y desactivar menú desplegable
     menuDesplegable(idBotonMenuDesplegable, idMenu, activarMenuDesplegable);
