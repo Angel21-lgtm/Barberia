@@ -85,3 +85,47 @@
 #servicios>#leer-mas-servicio>.contenedor-datos-leer-mas>div>.solicitar-servicio {
     margin-left: 3rem;
 }
+
+/* Artículo de galería de fotos de los clientes */
+#contenedor-galeria-de-fotos>div {
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+#contenedor-galeria-de-fotos>div>a {
+    line-height: 2rem;
+}
+
+#contenedor-galeria-de-fotos>article {
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+    place-items: center;
+}
+
+#contenedor-galeria-de-fotos>article>div {
+    min-width: 300px;
+    padding: 0.8rem;
+    background: var(--gris);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform .3s ease, box-shadow .3s ease;
+    scroll-snap-align: center;
+}
+
+#contenedor-galeria-de-fotos>article>div>img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Hover elegante */
+#contenedor-galeria-de-fotos>article>div:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
