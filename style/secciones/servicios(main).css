@@ -94,6 +94,8 @@
 
 #contenedor-galeria-de-fotos>div>a {
     line-height: 2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
 #contenedor-galeria-de-fotos>article {
