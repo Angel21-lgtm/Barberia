@@ -18,10 +18,19 @@ import nav from "./inicio/nav.js";
 // Importando función servicios
 import servicios from "./servicios/servicios.js";
 const articuloDeServicios = document.getElementById("articulo-de-servicios");
+// Importando Back End Servicios
+import backEndServiciosCards from "./servicios/backEndServicios.js";
+const idBoton = [];
+backEndServiciosCards.forEach((elemento) => {
+    idBoton.push(elemento.idBoton);
+});
 // Importando botón de leer en servicios
 import botonLeerMas from "./servicios/botonLeerMas.js";
 const leerMasServicio = document.getElementById("leer-mas-servicio");
 const cerrarVentanaServicio = document.getElementById("cerrar-ventana-servicio");
+const textoLeerMas = document.querySelector(".texto-leer-mas");
+const tituloLeerMas = document.querySelector(".titulo-leer-mas");
+const solicitarServicio = document.querySelector(".solicitar-servicio");
 // Importando funciones de animaciones
 import scrollOpacity from "./animaciones/animaciones.js";
 
@@ -29,8 +38,8 @@ const main = () => {
     // Cargando página web
     download(idDownload, 5000, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
 
-    // Activar evento para ir a WhatsApp
-    irAWhatsApp(btnWhatsApp);
+    // Activar evento para ir a WhatsApp en el Nav
+    irAWhatsApp(btnWhatsApp, "https://wa.me/+5215615740725?text=¡Hola!%20Quiero%20reservar%20una%20cita...");
 
     // Activar y desactivar menú desplegable
     menuDesplegable(idBotonMenuDesplegable, idMenu, activarMenuDesplegable);
@@ -39,12 +48,13 @@ const main = () => {
     servicios(articuloDeServicios);
 
     // Activando botones de los servicios (Leer más)
-    botonLeerMas(leerMasServicio, cerrarVentanaServicio, "activar-leer-mas-servicio");
+    botonLeerMas(leerMasServicio, cerrarVentanaServicio, "activar-leer-mas-servicio", textoLeerMas, tituloLeerMas, solicitarServicio, idBoton);
 
     // Animaciones del window
     const contenedoresImagenServicios = document.querySelectorAll(".fondo-servicio");
     scrollOpacity(contenedoresImagenServicios, "opacity-servicio");
 
+    // Función para cambio de secciones del nav (menú)
     const botonesDelNav = document.querySelectorAll(".btn-nav");
     const secciones = document.querySelectorAll(".secciones");
     nav(botonesDelNav, "btn-nav-on", "btn-nav-off", secciones);

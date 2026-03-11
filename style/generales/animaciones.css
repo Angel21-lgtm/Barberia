@@ -72,7 +72,7 @@
 }
 
 nav div a:hover {
-    transform: scaleY(2.7) scaleX(0.9);
+    transform: scaleY(1.5) scaleX(0.9);
 }
 
 .btn-nav-on:hover {

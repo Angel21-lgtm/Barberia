@@ -11,6 +11,7 @@ const backEndServiciosCards = [
         idBoton: "servicio-1",
         precios: "$120",
         textoLeerMas: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis autem sed, fugiat sapiente nihil recusandae voluptatibus vel id nesciunt pariatur unde, eius nisi consectetur animi magni cumque molestias inventore officia.",
+        solicitarServicio: "https://wa.me/+5215615740725?text=¡Hola!%20Quiero%20solicitar%20Arreglo%20estético%20de%20Barba...",
     },
     {
         imgServicio: "../../img/servicios/corte-con-tijeras-y-navaja/corte-con-tijeras-y-navaja.jpg",
@@ -21,6 +22,7 @@ const backEndServiciosCards = [
         idBoton: "servicio-2",
         precios: "$180",
         textoLeerMas: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis autem sed, fugiat sapiente nihil recusandae voluptatibus vel id nesciunt pariatur unde, eius nisi consectetur animi magni cumque molestias inventore officia.",
+        solicitarServicio: "https://wa.me/+5215615740725?text=¡Hola!%20Quiero%20solicitar%20Corte%20con%20Tijeras%20y%20Navaja...",
     },
     {
         imgServicio: "../../img/servicios/corte-moderno-a-máquina/corte-moderno-a-máquina.jpg",
@@ -31,6 +33,7 @@ const backEndServiciosCards = [
         idBoton: "servicio-3",
         precios: "$150",
         textoLeerMas: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis autem sed, fugiat sapiente nihil recusandae voluptatibus vel id nesciunt pariatur unde, eius nisi consectetur animi magni cumque molestias inventore officia.",
+        solicitarServicio: "https://wa.me/+5215615740725?text=¡Hola!%20Quiero%20solicitar%20corte%20Moderno%20a%20Máquina...",
     },
     {
         imgServicio: "../../img/servicios/mascarilla/mascarilla.jpg",
@@ -41,6 +44,7 @@ const backEndServiciosCards = [
         idBoton: "servicio-4",
         precios: "$130",
         textoLeerMas: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis autem sed, fugiat sapiente nihil recusandae voluptatibus vel id nesciunt pariatur unde, eius nisi consectetur animi magni cumque molestias inventore officia.",
+        solicitarServicio: "https://wa.me/+5215615740725?text=¡Hola!%20Quiero%20solicitar%20Mascarilla...",
     },
 ];
 

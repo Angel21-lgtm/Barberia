@@ -63,11 +63,6 @@
     transition: all 0.3s;
 }
 
-#servicios>#leer-mas-servicio>.contenedor-datos-leer-mas {
-    max-width: 800px;
-    place-items: center;
-}
-
 #cerrar-ventana-servicio {
     left: 5%;
     top: 50%;
@@ -77,4 +72,16 @@
 
 .activar-leer-mas-servicio {
     transform: translateX(0) !important;
+}
+
+#servicios>#leer-mas-servicio>.contenedor-datos-leer-mas {
+    place-items: center;
+}
+
+#servicios>#leer-mas-servicio>.contenedor-datos-leer-mas>div {
+    max-width: 600px;
+}
+
+#servicios>#leer-mas-servicio>.contenedor-datos-leer-mas>div>.solicitar-servicio {
+    margin-left: 3rem;
 }

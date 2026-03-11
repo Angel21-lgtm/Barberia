@@ -63,8 +63,8 @@ nav {
     transition: all ease-out 0.3s;
 }
 
-nav div {
-    width: 20%;
+nav>div {
+    gap: 5px;
 }
 
 nav div img {
