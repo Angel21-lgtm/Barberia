@@ -98,10 +98,21 @@ nav div a:hover {
 #servicios>#articulo-de-servicios>div:hover {
     transform: scale(1.05);
     box-shadow: 0 0 5px var(--gris);
+    z-index: 1;
 }
 
 #servicios>#articulo-de-servicios>div:hover .fondo-servicio {
     transform: scale(1.05);
     opacity: 1;
     filter: blur(0) !important;
+}
+
+#contenedor-galeria-de-fotos>div>div:hover {
+    transform: rotate(2deg) scale(1.01);
+    z-index: 1;
+}
+
+#contenedor-galeria-de-fotos>div>div:hover:before {
+    opacity: 0;
+    transform: translateY(100%);
 }

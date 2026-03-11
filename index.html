@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./style/librerías/display.css">
     <link rel="stylesheet" href="./style/librerías/flex-box.css">
     <link rel="stylesheet" href="./style/librerías/grid.css">
+    <link rel="stylesheet" href="./style/librerías/javs-script.css">
     <link rel="stylesheet" href="./style/librerías/position.css">
     <!-- Generales -->
     <link rel="stylesheet" href="./style/generales/animaciones.css">
@@ -28,7 +29,7 @@
     <!---------------------------------------------------------->
     <!-- Carga de página web (download) -->
     <div class="position-fixed display-flex justify-content-center align-items-center" id="download">
-        <h2 class="display-flex position-relative">
+        <p class="download display-flex position-relative">
             <span class="letras-encabezado-download display-inline-block">C</span>
             <span class="letras-encabezado-download display-inline-block">a</span>
             <span class="letras-encabezado-download display-inline-block">r</span>
@@ -37,7 +38,7 @@
             <span class="letras-encabezado-download display-inline-block">n</span>
             <span class="letras-encabezado-download display-inline-block">d</span>
             <span class="letras-encabezado-download display-inline-block">o</span>
-        </h2>
+        </p>
     </div>
     <!-- Carga de página web (download) -->
     <!---------------------------------------------------------->
@@ -117,8 +118,8 @@
             <p><strong>Profesionales en estilismo masculino</strong></p>
 
             <h1>
-                <strong class="nefhter position-relative">NEFHTER</strong><br>La casa del barbero<br>
-                <strong>Barbería Profesional</strong>
+                <strong class="nefhter position-relative">NEFHTER</strong><br>
+                <strong>BARBERÍA PROFESIONAL</strong>
             </h1>
 
             <ul class="display-flex align-items-center">
@@ -153,11 +154,15 @@
     <!-- Sección principal de los servicios que se ofrecen -->
     <main id="servicios" class="position-relative secciones">
         <!-- Descripción y título de servicios -->
-        <h2 class="align-self-flex-start">Nuestros servicios profesionales</h2>
-        <p class="align-self-flex-start">🇲🇽💇🏽‍♂️ Somos una empresa con la visión de transformar tu vida con un
-            cambio💈.
-            físico y emocional </p>
-        <p><b>NEFHTER</b> - No solo somos <strong>barbería</strong>, somos una casa dedicada a estilismo masculino</p>
+        <h2 data-text="Nuestros servicios profesionales" class="align-self-flex-start">Nuestros servicios profesionales
+        </h2>
+        <div class="display-grid grid-columns-minmax-200px-1fr ">
+            <p class="align-self-flex-start">🇲🇽💇🏽‍♂️ Somos una empresa con la visión de transformar tu vida con un
+                cambio💈.
+                físico y emocional </p>
+            <p><b>NEFHTER</b> - No solo somos <strong>barbería</strong>, somos una casa dedicada a estilismo masculino
+            </p>
+        </div>
         <!-- Descripción y título de servicios -->
 
         <!-- Artículo de cards de servicios -->
@@ -187,47 +192,42 @@
 
         <!-- Galería de fotos -->
         <section id="contenedor-galeria-de-fotos">
+            <h2 class="position-relative">GALERÍA DE FOTOS</h2>
             <div class="display-grid grid-columns-minmax-250px-1fr">
-                <h2>Galería<br>de nuestros<br><strong>clientes</strong></h2>
-                <a class="display-flex align-items-start flex-direction-column justify-content-flex-end"
-                    href="https://www.google.com/maps/place/C.+Llano+Grande+8,+La+Pila,+Cuajimalpa+de+Morelos,+05750+Ciudad+de+M%C3%A9xico,+CDMX/@19.3055,-99.3366,847m/data=!3m1!1e3!4m6!3m5!1s0x85cdf8682a38d35d:0xd1f0dcade11cd38f!8m2!3d19.3053773!4d-99.3365242!16s%2Fg%2F11dyqz6v33?hl=es&entry=ttu&g_ep=EgoyMDI2MDMwOC4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank">
-                    <span class="display-inline-block">Nos encontramos en:</span><br><strong>📍Avenida Llano
-                        Grande 8,
-                        05750 Cuajimalpa de Morelos
-                        CDMX,
-                        México</strong>
-                </a>
+                <div
+                    class="display-flex flex-direction-column position-relative justify-content-center align-items-center">
+                    <img src="./img/logotipo/logotipo-blanco.jpeg" alt="Logotipo" class="display-inline-bloc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit.</p>
+                    <a href="#"
+                        class="display-flex align-self-flex-start justify-content-center align-items-center position-relative btn-1">📍</a>
+                </div>
+                <div
+                    class="display-flex flex-direction-column position-relative justify-content-center align-items-center">
+                    <img src="./img/logotipo/logotipo-plateado.jpeg" alt="Logotipo" class="display-inline-bloc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit.</p>
+                    <a href="#"
+                        class="display-flex align-self-flex-start justify-content-center align-items-center position-relative btn-1">📍</a>
+                </div>
+                <div
+                    class="display-flex flex-direction-column position-relative justify-content-center align-items-center">
+                    <img src="./img/logotipo/logotipo-negro.jpeg" alt="Logotipo" class="display-inline-bloc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit.</p>
+                    <a href="#"
+                        class="display-flex align-self-flex-start justify-content-center align-items-center position-relative btn-1">💬</a>
+                </div>
             </div>
 
-            <article class="display-flex">
-                <div class="display-flex justify-content-center flex-direction-column align-items-center">
-                    <h3 class="align-self-flex-start">Facial</h3>
-                    <p>
-                        Limpieza facial con vapor.
-                    </p>
-                    <img class="display-inline-block" src="./img/servicios/galeria/img-1.jpeg" alt="">
-                </div>
-                <div class="display-flex justify-content-center flex-direction-column align-items-center">
-                    <h3 class="align-self-flex-start">Facial</h3>
-                    <p>
-                        Limpieza facial con vapor.
-                    </p>
-                    <img class="display-inline-block" src="./img/servicios/galeria/img-1.jpeg" alt="">
-                </div>
-                <div class="display-flex justify-content-center flex-direction-column align-items-center">
-                    <h3 class="align-self-flex-start">Facial</h3>
-                    <p>
-                        Limpieza facial con vapor.
-                    </p>
-                    <img class="display-inline-block" src="./img/servicios/galeria/img-1.jpeg" alt="">
-                </div>
-                <div class="display-flex justify-content-center flex-direction-column align-items-center">
-                    <h3 class="align-self-flex-start">Facial</h3>
-                    <p>
-                        Limpieza facial con vapor.
-                    </p>
-                    <img class="display-inline-block" src="./img/servicios/galeria/img-1.jpeg" alt="">
+
+            <article id="contenedor-cards-galeria-fotos" class="display-grid grid-columns-minmax-200px-1fr">
+                <div
+                    class="foto-galeria display-flex justify-content-center flex-direction-column align-items-center position-relative">
+                    <img class="display-block" src="./img/servicios/galeria/img-1.jpeg" alt="">
+                    <button class="display-block position-relative btn-1 position-absolute">
+                        🔍
+                    </button>
                 </div>
             </article>
         </section>

@@ -5,14 +5,6 @@ const idDownload = document.getElementById("download");
 const quitarDownload = "quitar-download";
 const animacionEncabezadoDownload = "animacion-letras-encabezado-download";
 const letrasEncabezadoDownload = document.querySelectorAll(".letras-encabezado-download");
-const btnWhatsApp = document.getElementById("btn-whatsapp");
-// Importando función del menú desplegable
-import menuDesplegable from "./inicio/menuDesplegable.js";
-const idBotonMenuDesplegable = document.getElementById("boton-menu-desplegable");
-const idMenu = document.getElementById("menu");
-const activarMenuDesplegable = "activar-menu-desplegable";
-// Importando función para cambio de secciones del nav (menú)
-import nav from "./inicio/nav.js";
 // Importando función servicios
 import servicios from "./servicios/servicios.js";
 const articuloDeServicios = document.getElementById("articulo-de-servicios");
@@ -30,11 +22,18 @@ const textoLeerMas = document.querySelector(".texto-leer-mas");
 const tituloLeerMas = document.querySelector(".titulo-leer-mas");
 const solicitarServicio = document.querySelector(".solicitar-servicio");
 // Importando funciones de animaciones
-import scrollOpacity from "./animaciones/animaciones.js";
+import scrollOpacity from "./librería/animaciones.js";
+// Importando función del menú desplegable
+import menuDesplegable from "./librería/menuDesplegable.js";
+const idBotonMenuDesplegable = document.getElementById("boton-menu-desplegable");
+const idMenu = document.getElementById("menu");
+const activarMenuDesplegable = "activar-menu-desplegable";
+// Importando función para cambio de secciones del nav (menú)
+import nav from "./librería/nav.js";
 
 const main = () => {
     // Cargando página web
-    download(idDownload, 5000, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
+    download(idDownload, 10, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
 
     // Activar y desactivar menú desplegable
     menuDesplegable(idBotonMenuDesplegable, idMenu, activarMenuDesplegable);

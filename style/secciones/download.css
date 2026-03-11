@@ -10,11 +10,13 @@
     z-index: 1000;
 }
 
-#download>h2 {
-    color: var(--dorado);
+#download>p {
+    src: url("../../fonts/Archivo_Black/ArchivoBlack-Regular.ttf");
+    font-size: 3rem;
+    font-weight: 900;
 }
 
-#download h2::before {
+#download>p::before {
     content: "";
     width: 20px;
     height: 20px;
@@ -27,8 +29,9 @@
     animation: download ease infinite 3s;
 }
 
-#download>h2 span {
+#download>p>span {
     text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 3px 3px 5px rgba(0, 0, 0, 0.6);
+    color: var(--dorado);
 }
 
 /* Quitar download */

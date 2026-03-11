@@ -3,7 +3,7 @@
 /* INICIO (CONTENEDOR HEADER) */
 #inicio {
     background-image: linear-gradient(to bottom, rgb(17, 16, 16, 0.3) 0%, rgb(17, 16, 16, 0.5) 65%, rgb(17, 16, 16, 0.7) 80%, rgb(17, 16, 16, 0.8) 90%, rgb(17, 16, 16, 0.9) 95%, var(--negro) 100%), url("../../img/inicio/inicio(header).jpg");
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: calc(80px + 2rem);
@@ -41,10 +41,6 @@
     left: 112.5px;
     border-top: 3px solid var(--gris);
     border-bottom: 3px solid var(--dorado);
-}
-
-.activar-menu-desplegable {
-    transform: translateX(0);
 }
 
 /* Contenedor nav */
@@ -88,68 +84,6 @@ nav ul {
     width: 80%;
     height: 100%;
     gap: 15px;
-}
-
-/* Enlaces */
-.btn-nav {
-    color: var(--blanco);
-    font-weight: 700;
-    letter-spacing: 3px;
-    transform: scaleY(1.5);
-    transition: all 0.3s;
-}
-
-.btn-nav-on {
-    background: var(--brillo-dorado);
-    background-size: 200% 200%;
-    animation: brillo-nav 4s infinite alternate;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
-    -webkit-text-fill-color: transparent;
-    padding: 5px 0.5rem;
-}
-
-.btn-nav-on::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-top: 3px solid;
-    border-left: 3px solid;
-    border-image: var(--brillo-dorado) 1;
-    filter: drop-shadow(0 0 4px var(--dorado)) drop-shadow(0 0 31px rgba(255, 215, 0, 0.6));
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.btn-nav-on::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-right: 3px solid;
-    border-bottom: 3px solid;
-    border-image: var(--brillo-dorado) 1;
-    filter: drop-shadow(0 0 4px var(--dorado)) drop-shadow(0 0 31px rgba(255, 215, 0, 0.6));
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.btn-nav-off {
-    overflow: hidden;
-}
-
-.btn-nav-off::before {
-    content: "";
-    transition: all 0.3s;
-    position: absolute;
-    bottom: 0;
-    left: -10%;
-    width: 100%;
-    height: 2px;
-    background-color: var(--dorado);
-    transform: translateX(-110%);
 }
 
 #tienda {
