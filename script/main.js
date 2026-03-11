@@ -5,8 +5,6 @@ const idDownload = document.getElementById("download");
 const quitarDownload = "quitar-download";
 const animacionEncabezadoDownload = "animacion-letras-encabezado-download";
 const letrasEncabezadoDownload = document.querySelectorAll(".letras-encabezado-download");
-// Función para redireccionar a WhatsApp
-import irAWhatsApp from "./inicio/irAWhatsApp.js";
 const btnWhatsApp = document.getElementById("btn-whatsapp");
 // Importando función del menú desplegable
 import menuDesplegable from "./inicio/menuDesplegable.js";
@@ -37,9 +35,6 @@ import scrollOpacity from "./animaciones/animaciones.js";
 const main = () => {
     // Cargando página web
     download(idDownload, 5000, quitarDownload, animacionEncabezadoDownload, letrasEncabezadoDownload, 200);
-
-    // Activar evento para ir a WhatsApp en el Nav
-    irAWhatsApp(btnWhatsApp, "https://wa.me/+5215615740725?text=¡Hola!%20Quiero%20reservar%20una%20cita...");
 
     // Activar y desactivar menú desplegable
     menuDesplegable(idBotonMenuDesplegable, idMenu, activarMenuDesplegable);

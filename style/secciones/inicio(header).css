@@ -2,7 +2,7 @@
 
 /* INICIO (CONTENEDOR HEADER) */
 #inicio {
-    background-image: linear-gradient(to bottom, rgb(17, 16, 16, 0.3) 0%, rgb(17, 16, 16, 0.5) 65%, rgb(17, 16, 16, 0.7) 80%, rgb(17, 16, 16, 0.8) 90%, rgb(17, 16, 16, 0.9) 95%, var(--negro) 100%), url("../../img/inicio/inicio(header).jpg");
+    background-image: linear-gradient(to bottom, rgb(17, 16, 16, 0.3) 0%, rgb(17, 16, 16, 0.5) 65%, rgb(17, 16, 16, 0.7) 80%, rgb(17, 16, 16, 0.8) 90%, rgb(17, 16, 16, 0.9) 95%, var(--negro) 100%), url("../../img/inicio/inicio(header).jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
