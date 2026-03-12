@@ -105,7 +105,9 @@
     padding: 1rem;
     border-radius: 10px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.8);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     transition: all 0.05s;
     box-shadow: 1px 2px 5px 5px var(--negro);
 }
@@ -118,7 +120,7 @@
     height: 350px;
     transform: rotate(45deg);
     background-color: var(--gris);
-    filter: blur(1px);
+    opacity: 0.7;
     z-index: -1;
     transition: all 0.5s;
 }
@@ -127,6 +129,11 @@
     width: 150px;
     height: 150px;
     border-radius: 75px;
+}
+
+#contenedor-galeria-de-fotos>div>div>p {
+    font-weight: 700;
+    text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 #contenedor-galeria-de-fotos>div>div>a {

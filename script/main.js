@@ -21,6 +21,9 @@ const cerrarVentanaServicio = document.getElementById("cerrar-ventana-servicio")
 const textoLeerMas = document.querySelector(".texto-leer-mas");
 const tituloLeerMas = document.querySelector(".titulo-leer-mas");
 const solicitarServicio = document.querySelector(".solicitar-servicio");
+// Importando card galeria (insertar cards)
+import cardGaleria from "./servicios/galeria.js";
+const contenedorCardsGaleria = document.getElementById("contenedor-cards-galeria");
 // Importando funciones de animaciones
 import scrollOpacity from "./librería/animaciones.js";
 // Importando función del menú desplegable
@@ -43,6 +46,9 @@ const main = () => {
 
     // Activando botones de los servicios (Leer más)
     botonLeerMas(leerMasServicio, cerrarVentanaServicio, "activar-leer-mas-servicio", textoLeerMas, tituloLeerMas, solicitarServicio, idBoton);
+
+    // Agregando las cards de la galeria
+    cardGaleria(contenedorCardsGaleria);
 
     // Animaciones del window
     const contenedoresImagenServicios = document.querySelectorAll(".fondo-servicio");
