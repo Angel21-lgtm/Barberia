@@ -4,7 +4,7 @@
 
 const backEndGaleriaCards = [
     {
-        fondoImg: "../../img/servicios/fondos/barber-shop.jpg",
+        fondoImg: "../../img/servicios/fondos/barber-shop.webp",
         srcImg: "../../img/logotipo/logotipo-blanco.jpeg",
         altImg: "Logotipo blanco",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
@@ -12,7 +12,7 @@ const backEndGaleriaCards = [
         textLink: "📍",
     },
     {
-        fondoImg: "../../img/servicios/fondos/herramientas.jpg",
+        fondoImg: "../../img/servicios/fondos/herramientas.webp",
         srcImg: "../../img/logotipo/logotipo-plateado.jpeg",
         altImg: "Logotipo plateado",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
@@ -20,7 +20,7 @@ const backEndGaleriaCards = [
         textLink: "📍",
     },
     {
-        fondoImg: "../../img/servicios/fondos/poste.jpg",
+        fondoImg: "../../img/servicios/fondos/poste.webp",
         srcImg: "../../img/logotipo/logotipo-negro.jpeg",
         altImg: "Logotipo negro",
         text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.",

@@ -14,7 +14,7 @@ const servicios = (contenedor) => {
                 <div style="background-image: url(${backEndServiciosCards[i].imgServicio});" class="fondo-servicio position-absolute">
                 </div>
                 <div class="display-flex justify-content-center align-items-center">
-                    <img src=${backEndServiciosCards[i].pngServicios} alt=${backEndServiciosCards[i].alts}>
+                    <img loading="lazy" src=${backEndServiciosCards[i].pngServicios} alt=${backEndServiciosCards[i].alts}>
                 </div>
                 <h3>${backEndServiciosCards[i].encabezadoServicio}</h3>
                 <p>${backEndServiciosCards[i].textoDelServicio}</p>
