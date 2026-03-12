@@ -105,14 +105,11 @@
     padding: 1rem;
     border-radius: 10px;
     overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     transition: all 0.05s;
     box-shadow: 1px 2px 5px 5px var(--negro);
 }
 
-#contenedor-galeria-de-fotos>div div::before {
+#contenedor-galeria-de-fotos>div>div::before {
     content: "";
     position: absolute;
     top: -50%;
@@ -123,6 +120,16 @@
     opacity: 0.7;
     z-index: -1;
     transition: all 0.5s;
+}
+
+#contenedor-galeria-de-fotos>div>div>.fondo-card-galeria {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    filter: blur(2px);
 }
 
 #contenedor-galeria-de-fotos>div>div>img {

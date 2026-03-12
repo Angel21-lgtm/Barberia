@@ -11,7 +11,8 @@ const cardGaleria = (contenedor) => {
     backEndGaleriaCards.forEach((elemento) => {
         contenido += `
             <div
-                style="background-image: url(${elemento.fondoImg});" class="display-flex flex-direction-column position-relative justify-content-center align-items-center">
+                class="display-flex flex-direction-column position-relative justify-content-center align-items-center">
+                <div style="background-image: url(${elemento.fondoImg});" class="fondo-card-galeria position-absolute"></div>
                 <img src="${elemento.srcImg}" alt="${elemento.altImg}" class="display-inline-block">
                 <p>${elemento.text}</p>
                 <a href="${elemento.href}"

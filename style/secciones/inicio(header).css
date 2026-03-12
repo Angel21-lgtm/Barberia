@@ -91,6 +91,10 @@ nav ul {
 }
 
 /* Artículo del encabezado y contenido */
+#inicio>article {
+    width: 100%;
+}
+
 #inicio h1 .nefhter::before {
     content: "NEFHTER";
     width: 100%;
