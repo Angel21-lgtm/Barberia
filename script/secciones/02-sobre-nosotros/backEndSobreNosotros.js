@@ -12,7 +12,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
-        tiempoAnimacion: 8 + Math.round() * 1.5,
+        tiempoAnimacion: 25,
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-2.avif",
@@ -21,7 +21,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
-        tiempoAnimacion: 8 + Math.round() * 1.1,
+        tiempoAnimacion: 20,
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-3.avif",
@@ -30,7 +30,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
-        tiempoAnimacion: 8 + Math.round() * 1.8,
+        tiempoAnimacion: 17,
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-4.avif",
@@ -39,7 +39,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
-        tiempoAnimacion: 8 + Math.round() * 2,
+        tiempoAnimacion: 23,
     },
 ];
 
@@ -51,7 +51,7 @@ const innerHTMLCardsBarberos = (contenedor) => {
         contenido +=
             `<div class="card-barbero display-flex flex-direction-column justify-content-center align-items-center">
                 <div class="flex-1">
-                    <img style="animation-duration: ${card.tiempoAnimacion};" class="imgen-burbuja" src="${card.imgBarbero}" alt="Foto de barbero.">
+                    <img style="animation-duration: ${card.tiempoAnimacion}s;" class="imgen-burbuja" src="${card.imgBarbero}" alt="Foto de barbero.">
                 </div>
                 <h4>
                     ${card.nombreDelBarbero}
@@ -80,6 +80,11 @@ const innerHTMLCardsBarberos = (contenedor) => {
                         </a>
                     </li>
                 </ul>
+                <div>
+                    <button class="boton-1 position-relative">
+                        CONTACTAR
+                    </button>
+                </div>
             </div>`;
     });
 

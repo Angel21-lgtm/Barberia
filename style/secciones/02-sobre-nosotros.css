@@ -17,6 +17,8 @@
 #sobre-nosotros>section>article>div {
     gap: 10px;
     padding: 10px;
+    border-radius: 10px;
+    transition: all 0.35s;
 }
 
 #sobre-nosotros>section>article>div>h3 {
@@ -41,8 +43,9 @@
 }
 
 #sobre-nosotros>section>article>div>div>img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 160px;
     border-radius: 75px;
     filter: blur(0.5px);
+    cursor: pointer;
 }

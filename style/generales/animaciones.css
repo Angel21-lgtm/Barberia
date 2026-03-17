@@ -16,6 +16,13 @@
     transform: translateX(0);
 }
 
+/* SOBRE NOSOTROS */
+#sobre-nosotros>section>article>div:hover {
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
+
 /* Animación redes sociales */
 .red-social>img:hover {
     filter: brightness(0) invert(1);
