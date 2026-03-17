@@ -11,7 +11,8 @@
 
 /* Card del perfil */
 #sobre-nosotros>section>article {
-    gap: 5px;
+    gap: 25px;
+    padding: 10px;
 }
 
 #sobre-nosotros>section>article>div {
@@ -19,6 +20,18 @@
     padding: 10px;
     border-radius: 10px;
     transition: all 0.35s;
+}
+
+#sobre-nosotros>section>article>div>div:first-child {
+    padding: 2px;
+    background-color: var(--blanco);
+    border-radius: 50%;
+}
+
+#sobre-nosotros>section>article>div>p::first-letter {
+    color: var(--dorado);
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
 #sobre-nosotros>section>article>div>h3 {
@@ -43,7 +56,7 @@
 }
 
 #sobre-nosotros>section>article>div>div>img {
-    width: 120px;
+    width: 180px;
     height: 160px;
     border-radius: 75px;
     filter: blur(0.5px);

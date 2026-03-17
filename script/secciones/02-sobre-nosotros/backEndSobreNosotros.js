@@ -12,7 +12,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
-        tiempoAnimacion: 25,
+        tiempoAnimacion: 17.5,
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-2.avif",
@@ -30,7 +30,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
-        tiempoAnimacion: 17,
+        tiempoAnimacion: 15.2,
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-4.avif",
@@ -39,7 +39,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
-        tiempoAnimacion: 23,
+        tiempoAnimacion: 18,
     },
 ];
 
