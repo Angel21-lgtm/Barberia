@@ -6,6 +6,8 @@
 import innerHTMLPromociones from "./secciones/01-inicio/backEndInicio.js";
 // BARBEROS
 import innerHTMLCardsBarberos from "./secciones/02-sobre-nosotros/backEndSobreNosotros.js";
+// ANIMACIONES CARDS BARBEROS
+import animacionCardBarbero from "./secciones/02-sobre-nosotros/animacionCardBarbero.js";
 // LIBRERÍA DEL NAV
 import nav from "./llibreria/nav.js";
 // LIBRERÍA DE ANIMACIONES DEL CURSOR
@@ -21,6 +23,9 @@ const main = () => {
     // Barberos
     const cardsBarberos = document.getElementById("cards-barberos");
     innerHTMLCardsBarberos(cardsBarberos);
+    // Animación de las cards de los barberos
+    const cardBarbero = document.querySelectorAll(".card-barbero");
+    animacionCardBarbero(cardBarbero, ".img-barbero");
 
     // FUNCIONES DEL NAV
     // Nav responsive

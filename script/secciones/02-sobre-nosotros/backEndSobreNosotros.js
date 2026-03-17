@@ -45,38 +45,38 @@ const innerHTMLCardsBarberos = (contenedor) => {
 
     backEndBarberos.forEach(card => {
         contenido +=
-            `<div class="display-flex flex-direction-column justify-content-center align-items-center">
-            <div class="flex-1">
-                <img src="${card.imgBarbero}" alt="Foto de barbero.">
-            </div>
-            <h4>
-                ${card.nombreDelBarbero}
-            </h4>
-            <p class="flex-1">
-                ${card.textoDeSuPerfil}
-            </p>
-            <h3>
-                REDES SOCIALES
-                <span></span>
-            </h3>
-            <ul class="display-flex align-items-center justify-content-center">
-                <li>
-                    <a class="red-social" title="¡Visítame en Facebook!" href="${card.hrefFacebook}">
-                        <img src="./img/iconos/redes-sociales/facebook-naranja.png" alt="Facebook.">
-                    </a>
-                </li>
-                <li>
-                    <a class="red-social" title="¡Visítame en Instagram!" href="${card.hrefInstagram}">
-                        <img src="./img/iconos/redes-sociales/instagram-naranja.png" alt="Instagram.">
-                    </a>
-                </li>
-                <li>
-                    <a class="red-social" title="¡Visítame en TikTok!" href="${card.hrefTikTok}">
-                        <img src="./img/iconos/redes-sociales/tiktok-naranja.png" alt="TikTok.">
-                    </a>
-                </li>
-            </ul>
-        </div>`;
+            `<div class="card-barbero display-flex flex-direction-column justify-content-center align-items-center">
+                <div class="flex-1">
+                    <img class="img-barbero" src="${card.imgBarbero}" alt="Foto de barbero.">
+                </div>
+                <h4>
+                    ${card.nombreDelBarbero}
+                </h4>
+                <p class="flex-1">
+                    ${card.textoDeSuPerfil}
+                </p>
+                <h3>
+                    REDES SOCIALES
+                    <span></span>
+                </h3>
+                <ul class="display-flex align-items-center justify-content-center">
+                    <li class="display-flex align-items-center justify-content-center">
+                        <a class="red-social display-flex align-items-center justify-content-center" title="¡Visítame en Facebook!" href="${card.hrefFacebook}">
+                            <img src="./img/iconos/redes-sociales/facebook-naranja.png" alt="Facebook.">
+                        </a>
+                    </li>
+                    <li class="display-flex align-items-center justify-content-center">
+                        <a class="red-social display-flex align-items-center justify-content-center" title="¡Visítame en Instagram!" href="${card.hrefInstagram}">
+                            <img src="./img/iconos/redes-sociales/instagram-naranja.png" alt="Instagram.">
+                        </a>
+                    </li>
+                    <li class="display-flex align-items-center justify-content-center">
+                        <a class="red-social display-flex align-items-center justify-content-center" title="¡Visítame en TikTok!" href="${card.hrefTikTok}">
+                            <img src="./img/iconos/redes-sociales/tiktok-naranja.png" alt="TikTok.">
+                        </a>
+                    </li>
+                </ul>
+            </div>`;
     });
 
     contenedor.innerHTML = contenido;

@@ -21,6 +21,12 @@
 
 #sobre-nosotros>section>article>div>h3 {
     color: var(--naranja);
+    margin-bottom: 5px;
+}
+
+#sobre-nosotros>section>article>div>h3::after,
+#sobre-nosotros>section>article>div>h3::before {
+    border-bottom: 1px solid var(--blanco);
 }
 
 #sobre-nosotros>section>article>div>h3>span {
@@ -30,10 +36,18 @@
 #sobre-nosotros>section>article>div>ul {
     gap: 15px;
     margin-top: 5px;
+    padding: 5px;
+    border-radius: 2.5px;
 }
 
 #sobre-nosotros>section>article>div>div>img {
     width: 150px;
     height: 150px;
     border-radius: 75px;
+    filter: blur(0.5px);
+}
+
+/* Animación de la imagen de la card al mover el mouse o hacer scroll */
+.img-barbero {
+    animation: burbuja 6s ease-in-out infinite;
 }
