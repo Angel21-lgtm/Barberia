@@ -1,0 +1,22 @@
+/* ANIMACIONES ESPECIALES DE TODAS LAS SECCIONES */
+
+/* INICIO */
+/* Nav */
+#inicio>nav>div:hover {
+    transform: scale(1.1);
+    content: url("../../img/iconos/logotipo/logotipo-negro.png");
+    cursor: pointer;
+}
+
+#inicio>nav>ul>li>a:hover {
+    color: var(--dorado);
+}
+
+#inicio>nav>ul>li>a:hover::after {
+    transform: translateX(0);
+}
+
+#inicio>nav>.ul-navegador-de-redes-sociales>li>a>img:hover {
+    filter: brightness(0) invert(1);
+    transform: scale(1.07);
+}

@@ -1,0 +1,57 @@
+/* ESTILOS RESPONSIVOS PARA DISTINTAS RESOLUCIONES */
+
+/* =========================================
+   ESTILOS RESPONSIVOS (Mobile Last - max-width)
+   ========================================= */
+
+/* 1. Escritorios grandes / monitores grandes */
+@media screen and (max-width: 1400px) {
+    /* Monitores grandes y laptops grandes */
+}
+
+/* 2. Escritorios estándar */
+@media screen and (max-width: 1200px) {
+    /* Laptops y monitores comunes */
+}
+
+/* 3. Tablets en horizontal / laptops pequeñas */
+@media screen and (max-width: 992px) {
+    /* Tablets en horizontal y laptops de 13" */
+}
+
+/* 4. Tablets verticales / móviles grandes */
+@media screen and (max-width: 768px) {
+    /* Tablets verticales y teléfonos grandes */
+
+    /* NAV */
+    /* Botón del menú desplegable */
+    #inicio>#boton-menu-desplegable {
+        display: flex;
+    }
+
+    nav {
+        transform: translateX(-100%);
+    }
+
+    /* SECTIONS */
+    /* Contenedores principales */
+    #inicio,
+    #sobre-nosotros,
+    #servicios,
+    #portafolio,
+    #tienda,
+    #contacto {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* 5. Móviles medianos */
+@media screen and (max-width: 576px) {
+    /* La mayoría de smartphones */
+}
+
+/* 6. Móviles pequeños */
+@media screen and (max-width: 400px) {
+    /* Smartphones pequeños */
+}

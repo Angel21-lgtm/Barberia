@@ -1,0 +1,117 @@
+/* ESTILOS UNIVERSALES */
+
+/* Todas las etiquetas */
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    z-index: 0;
+    list-style: none;
+    border: none;
+    scroll-behavior: smooth;
+    /*outline: 1px solid red;*/
+}
+
+:root {
+    --negro: #121212;
+    --blanco: #F5F5F5;
+    --gris: #2C2C2C;
+    --dorado: #dca02a;
+    --naranja: #e97714;
+    --fondo-negro: linear-gradient(to right, #121212, #2C2C2C);
+}
+
+/* Nav */
+nav {
+    z-index: 10000;
+    width: 80px;
+    height: 100vh;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    gap: 10px;
+    background: var(--fondo-negro);
+    transition: all ease-in 0.25s;
+}
+
+/* Contenedores principales */
+#inicio,
+#sobre-nosotros,
+#servicios,
+#portafolio,
+#tienda,
+#contacto {
+    width: calc(100% - 80px);
+    min-height: 100vh;
+    margin-left: 80px;
+}
+
+#inicio {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.10) 10%, rgba(0, 0, 0, 0.55) 40%, rgba(0, 0, 0, 0.95) 75%, var(--negro) 100%), url("../../img/secciones/inicio/fondo-inicio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sobre-nosotros {
+    background-color: var(--negro);
+}
+
+/* Encabezados y párrafos */
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    position: relative;
+}
+
+h2::after,
+h3::after,
+h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: calc(50% - 35px);
+    border-bottom: 1px solid var(--dorado);
+}
+
+h2::before,
+h3::before,
+h4::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    width: calc(50% - 35px);
+    border-bottom: 1px solid var(--dorado);
+}
+
+h2>span,
+h3>span,
+h4>span {
+    position: absolute;
+    display: inline-block;
+    --size: clamp(22px, 3vw, 35px);
+    bottom: calc(var(--size) / -2.5);
+    left: calc(50% - (var(--size) / 2.5));
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Imágenes */
+img {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}

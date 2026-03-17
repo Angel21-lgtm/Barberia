@@ -1,0 +1,129 @@
+/* ESTILOS DE LA SECCIÓN INICIO (header) */
+
+/* NAV */
+/* Botón del menú desplegable */
+#inicio>#boton-menu-desplegable {
+    right: 15px;
+    top: 15px;
+    z-index: 10000;
+}
+
+/* Activar el nav */
+.activar-nav {
+    transform: translateX(0);
+}
+
+/* Barra de navegación y lista de navegación entre secciones */
+#inicio>nav>div {
+    height: 60px;
+    transition: all 0.25s ease;
+}
+
+#inicio>nav>ul>li {
+    width: 100%;
+    padding: 4px 2px;
+}
+
+#inicio>nav>.ul-navegador-de-secciones>li>a {
+    overflow: hidden;
+    font-weight: 100;
+    padding: 2px 0;
+    font-size: 0.8rem;
+    transition: all ease 0.25s;
+}
+
+#inicio>nav>.ul-navegador-de-secciones>li>a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--naranja);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all ease 0.25s;
+}
+
+/* Estilos de la activación del nav */
+.seccion-actual>a {
+    color: var(--naranja);
+}
+
+
+.seccion-actual::after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 15px;
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid var(--dorado);
+    border-bottom: 2px solid var(--dorado);
+}
+
+.seccion-actual::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 0;
+    border-top: 2px solid var(--dorado);
+    border-left: 2px solid var(--dorado);
+}
+
+.tienda {
+    color: var(--naranja);
+}
+
+
+/* Estilos del nav de las redes sociales */
+#inicio>nav>.ul-navegador-de-redes-sociales {
+    gap: 10px;
+}
+
+#inicio>nav>.ul-navegador-de-redes-sociales>li {
+    width: clamp(24px, 3vw, 30px);
+    height: clamp(24px, 3vw, 30px);
+}
+
+#inicio>nav>.ul-navegador-de-redes-sociales>li>a>img {
+    transition: all 0.35s ease;
+}
+
+/* SECCIÓN DEL INICIO (HEADER) */
+/* Section */
+#inicio>section>article {
+    padding: 5px;
+    gap: 15px;
+}
+
+#inicio>section>article>div {
+    max-height: 300px;
+}
+
+/* Encabezado principal */
+#inicio>section>article>h1 {
+    background: linear-gradient(40deg, var(--blanco), var(--dorado), var(--naranja), var(--negro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    gap: 20px;
+    text-align: center;
+    max-height: 70px;
+}
+
+#inicio>section>article>h1::after,
+#inicio>section>article>h1::before {
+    content: "";
+    height: 0;
+    width: 50%;
+    border-bottom: 1px dashed var(--dorado);
+    vertical-align: middle;
+}
+
+/* Subtítulo de las promociones */
+#inicio>section>article>h3>span {
+    background-image: url("../../img/iconos/encabezados/estrella.png");
+}
