@@ -49,5 +49,5 @@
 
 /* Animación de la imagen de la card al mover el mouse o hacer scroll */
 .img-barbero {
-    animation: burbuja 6s ease-in-out infinite;
+    animation: burbuja 5s ease-in-out infinite;
 }

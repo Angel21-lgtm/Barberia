@@ -6,7 +6,7 @@
 const animacionCardBarbero = (cards, claseImg) => {
     let scroll = false;
     let timeOut;
-    let time = 6;
+    let time = 5;
 
     window.addEventListener("mousemove", () => {
 
