@@ -138,6 +138,11 @@
     align-items: center;
 }
 
+/* Botón de redes sociales */
+.red-social>img {
+    transition: all 0.35s ease;
+}
+
 /* CONTENEDOR DE CONTENIDO (SECCIONES) */
 .seccion-contenedora-principal {
     width: 100%;

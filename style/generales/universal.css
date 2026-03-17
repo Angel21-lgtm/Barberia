@@ -69,8 +69,7 @@ h4 {
 }
 
 h2::after,
-h3::after,
-h4::after {
+h3::after {
     content: "";
     position: absolute;
     left: 0;
@@ -81,8 +80,7 @@ h4::after {
 }
 
 h2::before,
-h3::before,
-h4::before {
+h3::before {
     content: "";
     position: absolute;
     right: 0;
@@ -93,13 +91,12 @@ h4::before {
 }
 
 h2>span,
-h3>span,
-h4>span {
+h3>span {
     position: absolute;
     display: inline-block;
-    --size: clamp(22px, 3vw, 35px);
-    bottom: calc(var(--size) / -2.5);
-    left: calc(50% - (var(--size) / 2.5));
+    --size: clamp(16px, 2vw, 26px);
+    bottom: calc(var(--size) / -2);
+    left: calc(50% - (var(--size) / 2));
     width: var(--size);
     height: var(--size);
     border-radius: 50%;

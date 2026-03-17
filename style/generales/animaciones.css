@@ -16,7 +16,11 @@
     transform: translateX(0);
 }
 
-#inicio>nav>.ul-navegador-de-redes-sociales>li>a>img:hover {
+/* SOBRE NOSOTROS */
+
+
+/* Animación redes sociales */
+.red-social>img:hover {
     filter: brightness(0) invert(1);
     transform: scale(1.07);
 }

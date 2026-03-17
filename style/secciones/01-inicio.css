@@ -44,11 +44,13 @@
     transition: all ease 0.25s;
 }
 
-/* Estilos de la activación del nav */
+/* Estilos de la activación del nav sobre secciones */
 .seccion-actual>a {
     color: var(--naranja);
+    font-weight: 900 !important;
+    font-size: x-small !important;
+    text-shadow: 2px 2px var(--negro);
 }
-
 
 .seccion-actual::after {
     content: "";
@@ -78,17 +80,13 @@
 
 
 /* Estilos del nav de las redes sociales */
-#inicio>nav>.ul-navegador-de-redes-sociales {
+.ul-navegador-de-redes-sociales {
     gap: 10px;
 }
 
 #inicio>nav>.ul-navegador-de-redes-sociales>li {
     width: clamp(24px, 3vw, 30px);
     height: clamp(24px, 3vw, 30px);
-}
-
-#inicio>nav>.ul-navegador-de-redes-sociales>li>a>img {
-    transition: all 0.35s ease;
 }
 
 /* SECCIÓN DEL INICIO (HEADER) */
@@ -104,13 +102,7 @@
 
 /* Encabezado principal */
 #inicio>section>article>h1 {
-    background: linear-gradient(40deg, var(--blanco), var(--dorado), var(--naranja), var(--negro));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
     gap: 20px;
-    text-align: center;
     max-height: 70px;
 }
 

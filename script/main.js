@@ -1,30 +1,39 @@
-// FUNCIÓN MAIN PRINCIPAL PARA EJECUTAR TODOS LOS DEMÁS SCRIPTS ESPUÉS DEL EVENTO LOAD
+// FUNCIÓN MAIN PRINCIPAL
 
 "use strict";
 
-// AGREGANDO LAS PROMOCIONES
+// PROMOCIONES
 import innerHTMLPromociones from "./secciones/01-inicio/backEndInicio.js";
-// IMPORTANDO LIBRERÍA DEL NAV
+// BARBEROS
+import innerHTMLCardsBarberos from "./secciones/02-sobre-nosotros/backEndSobreNosotros.js";
+// LIBRERÍA DEL NAV
 import nav from "./llibreria/nav.js";
+// LIBRERÍA DE ANIMACIONES DEL CURSOR
+import polvoMouseMove from "./llibreria/cursor.js";
 
 const main = () => {
-    // AGREGANDO HTML AL DOCUMENTO
-    // Inicio (promociones)
+    // HTML AL DOCUMENTO
+    // INICIO 
+    // Promociones
     const contenedorPromociones = document.getElementById("contenedor-promociones");
     innerHTMLPromociones(contenedorPromociones);
+    // SOBRE NOSOTROS
+    // Barberos
+    const cardsBarberos = document.getElementById("cards-barberos");
+    innerHTMLCardsBarberos(cardsBarberos);
 
     // FUNCIONES DEL NAV
-    // Activar nav responsive
+    // Nav responsive
     const contenedorNav = document.querySelector("nav");
     const botonMenuDesplegable = document.getElementById("boton-menu-desplegable");
     nav.activarNavResponsive(contenedorNav, botonMenuDesplegable, "activar-nav");
     // Navegación del nav
-    const contenedorDeSecciones = document.querySelectorAll(".contenedor-de-secciones");
-    const listaLinksNav = document.querySelectorAll(".lista-links-nav");
-    nav.activarClaseSeccionActual(contenedorDeSecciones, listaLinksNav, "seccion-actual");
+    const secciones = document.querySelectorAll(".contenedor-de-secciones");
+    const itemsNav = document.querySelectorAll(".lista-links-nav");
+    nav.activarClaseSeccionActual(secciones, itemsNav, "seccion-actual");
 
+    // ANIMACIONES DEL MOUSE
+    polvoMouseMove();
 }
 
-window.addEventListener("load", () => {
-    main();
-});
+window.addEventListener("DOMContentLoaded", main);

@@ -1,0 +1,85 @@
+// PEQUEÑA BASE DE DATOS DE LA SECCIÓN SOBRE NOSOTROS
+
+"use strict";
+
+// CARDS DE LOS BARBEROS
+// Datos de las cards
+const backEndBarberos = [
+    {
+        imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-1.avif",
+        nombreDelBarbero: "NOMBRE DEL BARBERO",
+        textoDeSuPerfil: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt id, autem quisquam dolorenisi.",
+        hrefFacebook: "#",
+        hrefInstagram: "#",
+        hrefTikTok: "#",
+    },
+    {
+        imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-2.avif",
+        nombreDelBarbero: "NOMBRE DEL BARBERO",
+        textoDeSuPerfil: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt id, autem quisquam dolorenisi.",
+        hrefFacebook: "#",
+        hrefInstagram: "#",
+        hrefTikTok: "#",
+    },
+    {
+        imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-3.avif",
+        nombreDelBarbero: "NOMBRE DEL BARBERO",
+        textoDeSuPerfil: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt id, autem quisquam dolorenisi.",
+        hrefFacebook: "#",
+        hrefInstagram: "#",
+        hrefTikTok: "#",
+    },
+    {
+        imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-4.avif",
+        nombreDelBarbero: "NOMBRE DEL BARBERO",
+        textoDeSuPerfil: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt id, autem quisquam dolorenisi.",
+        hrefFacebook: "#",
+        hrefInstagram: "#",
+        hrefTikTok: "#",
+    },
+];
+
+// Función propia para agregar las cards de los barberos a la sección sobre nosotros
+const innerHTMLCardsBarberos = (contenedor) => {
+    let contenido = "";
+
+    backEndBarberos.forEach(card => {
+        contenido +=
+            `<div class="display-flex flex-direction-column justify-content-center align-items-center">
+            <div class="flex-1">
+                <img src="${card.imgBarbero}" alt="Foto de barbero.">
+            </div>
+            <h4>
+                ${card.nombreDelBarbero}
+            </h4>
+            <p class="flex-1">
+                ${card.textoDeSuPerfil}
+            </p>
+            <h3>
+                REDES SOCIALES
+                <span></span>
+            </h3>
+            <ul class="display-flex align-items-center justify-content-center">
+                <li>
+                    <a class="red-social" title="¡Visítame en Facebook!" href="${card.hrefFacebook}">
+                        <img src="./img/iconos/redes-sociales/facebook-naranja.png" alt="Facebook.">
+                    </a>
+                </li>
+                <li>
+                    <a class="red-social" title="¡Visítame en Instagram!" href="${card.hrefInstagram}">
+                        <img src="./img/iconos/redes-sociales/instagram-naranja.png" alt="Instagram.">
+                    </a>
+                </li>
+                <li>
+                    <a class="red-social" title="¡Visítame en TikTok!" href="${card.hrefTikTok}">
+                        <img src="./img/iconos/redes-sociales/tiktok-naranja.png" alt="TikTok.">
+                    </a>
+                </li>
+            </ul>
+        </div>`;
+    });
+
+    contenedor.innerHTML = contenido;
+}
+
+export default innerHTMLCardsBarberos;
