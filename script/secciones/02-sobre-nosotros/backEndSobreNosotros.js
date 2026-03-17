@@ -12,6 +12,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
+        tiempoAnimacion: 8 + Math.round() * 1.5,
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-2.avif",
@@ -20,6 +21,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
+        tiempoAnimacion: 8 + Math.round() * 1.1,
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-3.avif",
@@ -28,6 +30,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
+        tiempoAnimacion: 8 + Math.round() * 1.8,
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-4.avif",
@@ -36,6 +39,7 @@ const backEndBarberos = [
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
+        tiempoAnimacion: 8 + Math.round() * 2,
     },
 ];
 
@@ -47,7 +51,7 @@ const innerHTMLCardsBarberos = (contenedor) => {
         contenido +=
             `<div class="card-barbero display-flex flex-direction-column justify-content-center align-items-center">
                 <div class="flex-1">
-                    <img class="img-barbero" src="${card.imgBarbero}" alt="Foto de barbero.">
+                    <img style="animation-duration: ${card.tiempoAnimacion};" class="imgen-burbuja" src="${card.imgBarbero}" alt="Foto de barbero.">
                 </div>
                 <h4>
                     ${card.nombreDelBarbero}

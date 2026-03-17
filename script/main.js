@@ -25,7 +25,7 @@ const main = () => {
     innerHTMLCardsBarberos(cardsBarberos);
     // Animación de las cards de los barberos
     const cardBarbero = document.querySelectorAll(".card-barbero");
-    animacionCardBarbero(cardBarbero, ".img-barbero");
+    animacionCardBarbero(cardBarbero, ".jdsjd");
 
     // FUNCIONES DEL NAV
     // Nav responsive

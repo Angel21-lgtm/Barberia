@@ -46,8 +46,3 @@
     border-radius: 75px;
     filter: blur(0.5px);
 }
-
-/* Animación de la imagen de la card al mover el mouse o hacer scroll */
-.img-barbero {
-    animation: burbuja 5s ease-in-out infinite;
-}
