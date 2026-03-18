@@ -1,0 +1,32 @@
+/* ESTILOS DE LA SECCIÓN SERVICIOS */
+
+/* Párrafos y encabezados */
+#servicios>section>h2>span {
+    background-image: url("../../img/iconos/encabezados/servicios.png");
+}
+
+#servicios>section>p {
+    color: var(--negro);
+    font-weight: 500;
+    max-width: 650px;
+}
+
+/* Imágenes de los servicios */
+#servicios>section>.articulo-de-servicios {
+    min-width: 100%;
+    gap: 5px;
+    box-shadow: 0 0 5px var(--negro);
+}
+
+#servicios>section>.articulo-de-servicios>div {
+    height: 250px;
+    padding: 5px;
+    gap: 5px;
+}
+
+#servicios>section>.articulo-de-servicios>div>div {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}

@@ -1,12 +1,12 @@
 /* ESTILOS DE LA SECCIÓN SOBRE NOSOTROS */
 
 /* Subtítulo principal */
-#sobre-nosotros>section {
-    gap: 25px;
-}
-
 #sobre-nosotros>section>h2>span {
     background-image: url("../../img/iconos/encabezados/barbero.png");
+}
+
+#sobre-nosotros>section>p {
+    max-width: 650px;
 }
 
 /* Locales */
@@ -19,12 +19,8 @@
 #sobre-nosotros>section>header>article {
     padding: 10px;
     border-radius: 10px;
-    transition: all 0.1s ease;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    box-shadow: 0 4px 6px #010101, 5px 2px 4px #000;
+    transition: transform 0.4s ease;
+    transform-style: preserve-3d;
     gap: 5px;
 }
 
@@ -32,24 +28,31 @@
     gap: 10px;
 }
 
+#sobre-nosotros>section>header>article>div>h3 {
+    padding-bottom: 15px;
+}
+
 #sobre-nosotros>section>header>article>div>h3>span {
     background-image: url("../../img/iconos/encabezados/ubicacion.png");
 }
 
+#sobre-nosotros>section>header>article>div>p::first-letter {
+    color: var(--dorado);
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+
 #sobre-nosotros>section>header>article>div>div:first-child {
     height: 150px;
+    width: 100%;
 }
 
-#sobre-nosotros>section>header>article>:nth-child(2) {
-    background: linear-gradient(to bottom, var(--blanco) 0%, var(--dorado) 55%, var(--naranja) 80%, rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0.3) 95%, rgba(0, 0, 0, 0.2) 100%);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+/* Mapa */
+#sobre-nosotros>section>header>article>div>div:first-child iframe {
+    width: 100%;
     height: 100%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 66.6% 100%, 33.3% 100%, 0% 80%);
-}
-
-#sobre-nosotros>section>header>article>:nth-child(2) p {
-    font-weight: 500;
+    border-radius: 5px;
 }
 
 

@@ -2,12 +2,12 @@
 
 /* Encabezados */
 @font-face {
-    font-family: "Lora-Italic-VariableFont_wght";
-    src: url("../../fonts/Lora/Lora-Italic-VariableFont_wght.ttf");
+    font-family: "DancingScript-VariableFont_wght";
+    src: url("../../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
 }
 
 h1 {
-    font-family: "Lora-Italic-VariableFont_wght", sans-serif;
+    font-family: "DancingScript-VariableFont_wght";
     font-weight: 500;
     font-size: clamp(2rem, 5vw, 4rem);
     background: linear-gradient(40deg, var(--blanco), var(--dorado), var(--naranja), var(--negro));
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Lora-Italic-VariableFont_wght", sans-serif;
+    font-family: "DancingScript-VariableFont_wght";
     font-weight: 500;
     font-size: clamp(1.75rem, 4.5vw, 3.5rem);
     background: linear-gradient(40deg, var(--blanco), var(--dorado), var(--naranja), var(--negro));
@@ -29,14 +29,14 @@ h2 {
 }
 
 h3 {
-    font-family: "Lora-Italic-VariableFont_wght", sans-serif;
+    font-family: "DancingScript-VariableFont_wght";
     font-weight: 500;
     font-size: clamp(1rem, 2.5vw, 1.8rem);
     color: var(--naranja);
 }
 
 h4 {
-    font-family: "Lora-Italic-VariableFont_wght", sans-serif;
+    font-family: "DancingScript-VariableFont_wght";
     font-weight: 500;
     font-size: clamp(0.9rem, 2vw, 1.4rem);
     color: var(--blanco);

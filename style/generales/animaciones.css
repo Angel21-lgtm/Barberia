@@ -19,7 +19,7 @@
 /* SOBRE NOSOTROS */
 /* Locales cards */
 #sobre-nosotros>section>header>article:hover {
-    transform: translateY(-3px);
+    transform: rotateX(8deg);
 }
 
 /* Cards de los barberos */

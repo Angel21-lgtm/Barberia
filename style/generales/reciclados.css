@@ -148,7 +148,7 @@
     width: 100%;
     min-height: 100%;
     padding: clamp(1.5rem, 3vw, 3rem);
-    gap: 10px;
+    gap: 25px;
 }
 
 /* ANIMACIÓN DE IMÁGENES */

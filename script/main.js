@@ -8,8 +8,6 @@ import innerHTMLPromociones from "./secciones/01-inicio/backEndInicio.js";
 import backEndSobreNosotros from "./secciones/02-sobre-nosotros/backEndSobreNosotros.js"
 // LIBRERÍA DEL NAV
 import nav from "./llibreria/nav.js";
-// LIBRERÍA DE ANIMACIONES DEL CURSOR
-import polvoMouseMove from "./llibreria/cursor.js";
 
 const main = () => {
     // HTML AL DOCUMENTO
@@ -34,9 +32,6 @@ const main = () => {
     const secciones = document.querySelectorAll(".contenedor-de-secciones");
     const itemsNav = document.querySelectorAll(".lista-links-nav");
     nav.activarClaseSeccionActual(secciones, itemsNav, "seccion-actual");
-
-    // ANIMACIONES DEL MOUSE
-    polvoMouseMove();
 }
 
 window.addEventListener("DOMContentLoaded", main);

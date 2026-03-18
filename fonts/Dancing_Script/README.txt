@@ -1,26 +1,21 @@
-Lora Variable Font
-==================
+Dancing Script Variable Font
+============================
 
-This download contains Lora as both variable fonts and static fonts.
+This download contains Dancing Script as both a variable font and static fonts.
 
-Lora is a variable font with this axis:
+Dancing Script is a variable font with this axis:
   wght
 
-This means all the styles are contained in these files:
-  Lora-VariableFont_wght.ttf
-  Lora-Italic-VariableFont_wght.ttf
+This means all the styles are contained in a single file:
+  DancingScript-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Lora:
-  static/Lora-Regular.ttf
-  static/Lora-Medium.ttf
-  static/Lora-SemiBold.ttf
-  static/Lora-Bold.ttf
-  static/Lora-Italic.ttf
-  static/Lora-MediumItalic.ttf
-  static/Lora-SemiBoldItalic.ttf
-  static/Lora-BoldItalic.ttf
+in those cases you can use the static font files for Dancing Script:
+  static/DancingScript-Regular.ttf
+  static/DancingScript-Medium.ttf
+  static/DancingScript-SemiBold.ttf
+  static/DancingScript-Bold.ttf
 
 Get started
 -----------
