@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbería Tema</title>
+    <!-- LOGOTIPO WEB-->
+    <link rel="shortcut icon" href="./img/iconos/logotipo/logotipo-negro.png" type="image/png">
     <!-- ESTILOS -->
     <!-- Librería -->
     <link rel="stylesheet" href="./style/librerías/display.css">
@@ -18,11 +20,20 @@
     <link rel="stylesheet" href="./style/generales/responsive.css">
     <link rel="stylesheet" href="./style/generales/universal.css">
     <!-- Secciones -->
+    <link rel="stylesheet" href="./style/secciones/0-load.css">
     <link rel="stylesheet" href="./style/secciones/01-inicio.css">
     <link rel="stylesheet" href="./style/secciones/02-sobre-nosotros.css">
 </head>
 
 <body>
+    <!------------------------------------------------------------------------------------------------------------------------------------>
+    <!-- LOAD-->
+    <section id="load" class="position-fixed display-none">
+        <img src="" alt="">
+    </section>
+    <!-- LOAD-->
+    <!------------------------------------------------------------------------------------------------------------------------------------>
+
     <!------------------------------------------------------------------------------------------------------------------------------------>
     <!-- SECCIÓN HEADER (CABECERA) -->
     <header id="inicio" class="contenedor-de-secciones display-flex">
@@ -168,75 +179,12 @@
             </h2>
             <!-- Encabezado principal de la sección -->
 
-            <!-- Reservaciones en los locales -->
-            <header class="display-grid grid-columns-minmax-250px-1fr">
-                <!-- Reservaciones en los locales cards -->
-                <article class="display-flex flex-direction-column align-items-center justify-content-center">
-                    <div class="display-flex align-items-center justify-content-center">
-                        <img class="imgen-burbuja" src="./img/secciones/sobre-nosotros/sucursales/sucursal-1.avif"
-                            alt="Fotografía de la sucursal 1.">
-                    </div>
-                    <h3>
-                        SUCURSALES
-                        <span></span>
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam accusamus fugiat, veniam dolorem
-                        saepe voluptatum nesciunt quo ea tempora nostrum error repellat mollitia incidunt ad blanditiis?
-                        Id inventore maxime suscipit?
-                    </p>
-                    <div data-text='"Ubicación de la sucursal 1"'
-                        class="display-flex align-items-center justify-content-center">
-                        <a class="boton-1 position-relative">
-                            Ir a ubicación
-                        </a>
-                    </div>
-                </article>
-                <article class="display-flex flex-direction-column align-items-center justify-content-center">
-                    <div class="display-flex align-items-center justify-content-center">
-                        <img class="imgen-burbuja" src="./img/secciones/sobre-nosotros/sucursales/sucursal-1.avif"
-                            alt="Fotografía de la sucursal 1.">
-                    </div>
-                    <h3>
-                        SUCURSALES
-                        <span></span>
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam accusamus fugiat, veniam dolorem
-                        saepe voluptatum nesciunt quo ea tempora nostrum error repellat mollitia incidunt ad blanditiis?
-                        Id inventore maxime suscipit?
-                    </p>
-                    <div data-text='"Ubicación de la sucursal 1"'
-                        class="display-flex align-items-center justify-content-center">
-                        <a class="boton-1 position-relative">
-                            Ir a ubicación
-                        </a>
-                    </div>
-                </article>
-                <article class="display-flex flex-direction-column align-items-center justify-content-center">
-                    <div class="display-flex align-items-center justify-content-center">
-                        <img class="imgen-burbuja" src="./img/secciones/sobre-nosotros/sucursales/sucursal-1.avif"
-                            alt="Fotografía de la sucursal 1.">
-                    </div>
-                    <h3>
-                        SUCURSALES
-                        <span></span>
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam accusamus fugiat, veniam dolorem
-                        saepe voluptatum nesciunt quo ea tempora nostrum error repellat mollitia incidunt ad blanditiis?
-                        Id inventore maxime suscipit?
-                    </p>
-                    <div data-text='"Ubicación de la sucursal 1"'
-                        class="display-flex align-items-center justify-content-center">
-                        <a class="boton-1 position-relative">
-                            Ir a ubicación
-                        </a>
-                    </div>
-                </article>
-                <!-- Reservaciones en los locales cards -->
+            <!-- Locales -->
+            <header id="cards-sucursales" class="display-grid grid-columns-minmax-250px-1fr">
+                <!-- locales cards -->
+                <!-- locales cards -->
             </header>
-            <!-- Reservaciones en los locales -->
+            <!-- Locales -->
 
             <!-- Cards de los barberos -->
             <article id="cards-barberos" class="display-grid grid-columns-minmax-250px-1fr">

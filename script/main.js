@@ -4,8 +4,8 @@
 
 // PROMOCIONES
 import innerHTMLPromociones from "./secciones/01-inicio/backEndInicio.js";
-// BARBEROS
-import innerHTMLCardsBarberos from "./secciones/02-sobre-nosotros/backEndSobreNosotros.js";
+// SOBRE NOSOTROS
+import backEndSobreNosotros from "./secciones/02-sobre-nosotros/backEndSobreNosotros.js"
 // LIBRERÍA DEL NAV
 import nav from "./llibreria/nav.js";
 // LIBRERÍA DE ANIMACIONES DEL CURSOR
@@ -18,11 +18,12 @@ const main = () => {
     const contenedorPromociones = document.getElementById("contenedor-promociones");
     innerHTMLPromociones(contenedorPromociones);
     // SOBRE NOSOTROS
+    // Sucursales
+    const cardsSucursales = document.getElementById("cards-sucursales");
+    backEndSobreNosotros.innerHTMLCardsSucursales(cardsSucursales);
     // Barberos
     const cardsBarberos = document.getElementById("cards-barberos");
-    innerHTMLCardsBarberos(cardsBarberos);
-    // Animación de las cards de los barberos
-    const cardBarbero = document.querySelectorAll(".card-barbero");
+    backEndSobreNosotros.innerHTMLCardsBarberos(cardsBarberos);
 
     // FUNCIONES DEL NAV
     // Nav responsive

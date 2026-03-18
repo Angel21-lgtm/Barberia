@@ -1,51 +1,57 @@
 /* ESTILOS DE LA SECCIÓN SOBRE NOSOTROS */
 
 /* Subtítulo principal */
-#sobre-nosotros>section>h2 {
-    margin-bottom: 20px;
+#sobre-nosotros>section {
+    gap: 25px;
 }
 
 #sobre-nosotros>section>h2>span {
     background-image: url("../../img/iconos/encabezados/barbero.png");
 }
 
-/* Reservaciones en los locales */
+/* Locales */
 #sobre-nosotros>section>header {
     gap: 15px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 5px;
+    width: 100%;
 }
 
-/* Reservaciones en los locales cards */
+/* Locales cards */
 #sobre-nosotros>section>header>article {
-    gap: 10px;
+    padding: 10px;
     border-radius: 10px;
-    padding-bottom: 25px;
-    padding-top: 10px;
-    filter: blur(0.5px);
-    overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: 0 4px 6px #010101, 5px 2px 4px #000;
+    gap: 5px;
 }
 
-#sobre-nosotros>section>header>article>div:first-child {
-    height: 250px;
+#sobre-nosotros>section>header>article>div {
+    gap: 10px;
 }
 
-#sobre-nosotros>section>header>article>h3 {
-    text-shadow: 8px 8px 8px #010101;
-    margin-bottom: 15px;
-    color: var(--dorado);
-    padding-bottom: 10px;
-}
-
-#sobre-nosotros>section>header>article>h3>span {
+#sobre-nosotros>section>header>article>div>h3>span {
     background-image: url("../../img/iconos/encabezados/ubicacion.png");
 }
 
-#sobre-nosotros>section>header>article>p {
-    text-shadow: 8px 8px 8px #010101;
+#sobre-nosotros>section>header>article>div>div:first-child {
+    height: 150px;
 }
+
+#sobre-nosotros>section>header>article>:nth-child(2) {
+    background: linear-gradient(to bottom, var(--blanco) 0%, var(--dorado) 55%, var(--naranja) 80%, rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0.3) 95%, rgba(0, 0, 0, 0.2) 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 66.6% 100%, 33.3% 100%, 0% 80%);
+}
+
+#sobre-nosotros>section>header>article>:nth-child(2) p {
+    font-weight: 500;
+}
+
 
 /* Card del perfil */
 #sobre-nosotros>section>article {
@@ -73,13 +79,7 @@
 }
 
 #sobre-nosotros>section>article>div>h3 {
-    color: var(--naranja);
     margin-bottom: 5px;
-}
-
-#sobre-nosotros>section>article>div>h3::after,
-#sobre-nosotros>section>article>div>h3::before {
-    border-bottom: 1px solid var(--blanco);
 }
 
 #sobre-nosotros>section>article>div>h3>span {

@@ -2,6 +2,85 @@
 
 "use strict";
 
+// CARDS DE LAS SUCURSALES
+// Datos de las sucursales
+const backEndSucursales = [
+    {
+        imgCardSucursal: "../../img/secciones/sobre-nosotros/sucursales/fondo-sucursal-1.avif",
+        encabezadoPrincipal: "SUCURSAL 1",
+        textoPrincipal: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        title: "Ubicación de la sucursal 1.",
+        href: "#",
+        imgSucursal: "./img/secciones/sobre-nosotros/sucursales/sucursal-1.avif",
+        alt: "Imagen sucursal 1.",
+        encabezadoSecundario: "VISÍTANOS",
+        textoSecundario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    },
+    {
+        imgCardSucursal: "../../img/secciones/sobre-nosotros/sucursales/fondo-sucursal-2.avif",
+        encabezadoPrincipal: "SUCURSAL 2",
+        textoPrincipal: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        title: "Ubicación de la sucursal 2.",
+        href: "#",
+        imgSucursal: "./img/secciones/sobre-nosotros/sucursales/sucursal-2.avif",
+        alt: "Imagen sucursal 2.",
+        encabezadoSecundario: "VISÍTANOS",
+        textoSecundario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    },
+    {
+        imgCardSucursal: "../../img/secciones/sobre-nosotros/sucursales/fondo-sucursal-3.avif",
+        encabezadoPrincipal: "SUCURSAL 3",
+        textoPrincipal: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        title: "Ubicación de la sucursal 3.",
+        href: "#",
+        imgSucursal: "./img/secciones/sobre-nosotros/sucursales/sucursal-3.avif",
+        alt: "Imagen sucursal 3.",
+        encabezadoSecundario: "VISÍTANOS",
+        textoSecundario: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    },
+];
+
+// Función propia para agregar las cards de las sucursales a la sección sobre nosotros
+const innerHTMLCardsSucursales = (contenedor) => {
+    let contenido = "";
+
+    backEndSucursales.forEach(sucursal => {
+        contenido += `<article style="background-image: url(${sucursal.imgCardSucursal});" class="display-flex align-items-center justify-content-center">
+                        <div class="flex-1 display-flex align-items-center justify-content-center flex-direction-column">
+                            <div class="display-flex align-items-center justify-content-center">
+                                <img src="./img/iconos/logotipo/logotipo-blanco.png" alt="Logotipo.">
+                            </div>
+                            <h3>
+                                ${sucursal.encabezadoPrincipal}
+                                <span></span>
+                            </h3>
+                            <p>
+                                ${sucursal.textoPrincipal}
+                            </p>
+                            <div class="display-flex align-items-center justify-content-center">
+                                <a title="${sucursal.title}" href="${sucursal.href}" class="boton-1 position-relative">
+                                    Ir a ubicación
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div>
+                                <img class="imgen-burbuja" src="${sucursal.imgSucursal}"
+                                    alt="${sucursal.alt}">
+                            </div>
+                            <h4>
+                                ${sucursal.encabezadoSecundario}
+                            </h4>
+                            <p>
+                                ${sucursal.textoSecundario}
+                            </p>
+                        </div>
+                    </article>`;
+    });
+
+    contenedor.innerHTML = contenido;
+}
+
 // CARDS DE LOS BARBEROS
 // Datos de las cards
 const backEndBarberos = [
@@ -91,4 +170,4 @@ const innerHTMLCardsBarberos = (contenedor) => {
     contenedor.innerHTML = contenido;
 }
 
-export default innerHTMLCardsBarberos;
+export default { innerHTMLCardsBarberos, innerHTMLCardsSucursales };

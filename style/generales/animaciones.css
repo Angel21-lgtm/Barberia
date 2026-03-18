@@ -17,13 +17,14 @@
 }
 
 /* SOBRE NOSOTROS */
-/* Reservaciones en los locales cards */
-#sobre-nosotros>section>section>article:hover {
-    transform: scale(1.02) translateY(-10px);
+/* Locales cards */
+#sobre-nosotros>section>header>article:hover {
+    transform: translateY(-3px);
 }
 
+/* Cards de los barberos */
 #sobre-nosotros>section>article>div:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     z-index: 10000;
 }
 

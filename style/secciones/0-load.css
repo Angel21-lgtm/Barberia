@@ -1,0 +1,11 @@
+/* ESTILOS DE LA SECCIÓN LOAD (ANIMACIÓN DE CARGA */
+
+/* Contenedor load */
+#load {
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: red;
+    z-index: 10000;
+}
