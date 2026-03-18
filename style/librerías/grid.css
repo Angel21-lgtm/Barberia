@@ -1,18 +1,23 @@
 /* LIBRERÍA DE GRID */
 
-/* Colúmnas mínimo de 300 px con auto-fit (responsive básico) */
+/* Colúmnas mínimo de 300 px con auto-fit */
 .grid-columns-minmax-300px-1fr {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-/* Colúmnas mínimo de 250 px con auto-fit (responsive básico) */
+/* Colúmnas mínimo de 250 px con auto-fit */
 .grid-columns-minmax-250px-1fr {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-/* Colúmnas mínimo de 200 px con auto-fit (responsive básico) */
+/* Colúmnas mínimo de 200 px con auto-fit */
 .grid-columns-minmax-200px-1fr {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Colúmnas mínimo de 0 PX con auto-fit */
+.grid-columns-minmax-0-1fr {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 }
 
 /* place-items */
