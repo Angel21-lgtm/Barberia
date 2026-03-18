@@ -17,9 +17,13 @@
 }
 
 /* SOBRE NOSOTROS */
+/* Reservaciones en los locales cards */
+#sobre-nosotros>section>section>article:hover {
+    transform: scale(1.02) translateY(-10px);
+}
+
 #sobre-nosotros>section>article>div:hover {
     transform: translateY(-10px);
-    background-color: rgba(0, 0, 0, 0.2);
     z-index: 10000;
 }
 
