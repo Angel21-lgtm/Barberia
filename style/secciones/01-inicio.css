@@ -103,14 +103,13 @@
 /* Encabezado principal */
 #inicio>section>article>h1 {
     gap: 20px;
-    max-height: 70px;
 }
 
 #inicio>section>article>h1::after,
 #inicio>section>article>h1::before {
     content: "";
     height: 0;
-    width: 50%;
+    width: 30%;
     border-bottom: 1px dashed var(--dorado);
     vertical-align: middle;
 }
@@ -118,8 +117,13 @@
 /* Subtítulo de las promociones */
 #inicio>section>article>h3 {
     color: var(--blanco);
+    max-width: 350px;
 }
 
 #inicio>section>article>h3>span {
     background-image: url("../../img/iconos/encabezados/estrella.png");
+}
+
+#inicio>section>article>ul {
+    width: 100%;
 }

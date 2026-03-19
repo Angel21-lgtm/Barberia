@@ -132,8 +132,5 @@
 /* Logotipo */
 .logotipo-final {
     height: 250px;
-    background: radial-gradient(circle at 25% 30%, rgba(220, 160, 42, 0.25), transparent 45%), radial-gradient(circle at 75% 70%, rgba(233, 119, 20, 0.2), transparent 45%), linear-gradient(135deg, #dca02a, #e97714 40%, #2a1a05 100%);
-    padding: 5px;
-    border-radius: 150px;
-    overflow: hidden;
+    max-width: 300px;
 }

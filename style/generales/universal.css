@@ -21,6 +21,7 @@ html {
     --dorado: #dca02a;
     --naranja: #e97714;
     --fondo-negro: linear-gradient(to right, #121212, #2C2C2C);
+    --logotipo: radial-gradient(circle at 25% 30%, rgba(220, 160, 42, 0.25), transparent 45%), radial-gradient(circle at 75% 70%, rgba(233, 119, 20, 0.2), transparent 45%), linear-gradient(135deg, #dca02a, #e97714 40%, #2a1a05 100%);
     --padding: clamp(8px, 1vw, 12px);
 }
 
@@ -155,7 +156,7 @@ textarea {
     min-width: 100%;
     min-height: 100%;
     padding: var(--padding);
-    color: var(--gris);
+    color: var(--blanco);
     background: transparent;
     background-color: rgba(0, 0, 0, 0.15);
     transition: all 0.3s;

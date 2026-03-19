@@ -144,6 +144,7 @@
 }
 
 /* CONTENEDOR DE CONTENIDO (SECCIONES) */
+/* Contenedor */
 .seccion-contenedora-principal {
     width: 100%;
     min-height: 100%;
@@ -194,4 +195,11 @@
     100% {
         border-radius: 30% 70% 50% 50% / 65% 35% 50% 50%;
     }
+}
+
+/* LOGOTIPO */
+.logotipo {
+    background: var(--logotipo);
+    padding: 5px;
+    overflow: hidden;
 }
