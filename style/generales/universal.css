@@ -43,7 +43,7 @@ b {
     color: var(--naranja);
     text-transform: uppercase;
     font-weight: 500;
-    font-family: "DancingScript-VariableFont_wght";
+    font-family: "Oswald-VariableFont", sans-serif;
 }
 
 /* Contenedores principales */

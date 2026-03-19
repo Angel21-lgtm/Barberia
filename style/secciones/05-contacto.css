@@ -12,6 +12,7 @@
     gap: 15px;
 }
 
+/* Encabezado y tecto */
 #contacto>section>form>h3 {
     max-width: 300px;
 }
@@ -25,6 +26,7 @@
     text-align: left;
 }
 
+/* Contenedores de inputs y labels */
 #contacto>section>form>div {
     width: 100%;
     padding: 5px;
@@ -54,10 +56,11 @@
     left: 0;
     background-color: var(--dorado);
     transition: all 0.3s;
-    padding: 1px 2px;
+    padding: 1px;
     border-radius: 5px;
     transform: translateY(200%);
     opacity: 0;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
 /* Textarea */
@@ -85,11 +88,12 @@
     left: 0;
     background-color: var(--dorado);
     transition: all 0.3s;
-    padding: 1px 2px;
+    padding: 1px;
     border-radius: 5px;
     color: var(--blanco);
     transform: translateY(200%);
     opacity: 0;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
 /* Datos de contacto */

@@ -45,12 +45,21 @@
 }
 
 /* CONTACTO */
-/* Input, label y textarea */
-#contacto>section>form>div>label>input:hover,
-#contacto>section>form>.contenedor-text-area>textarea:hover,
-#contacto>section>form>div>label>input:focus,
-#contacto>section>form>.contenedor-text-area>textarea:focus {
+/* Input */
+#contacto>section>form>div>label>input:hover {
     background: transparent;
+}
+
+#contacto>section>form>div>label>input:focus {
+    background: transparent;
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Label */
+#contacto>section>form>div>label:hover::after {
+    width: 100%;
+    opacity: 1;
 }
 
 #contacto>section>form>div>label:focus-within::after {
@@ -59,11 +68,21 @@
 }
 
 #contacto>section>form>div>label:focus-within::before {
-    transform: translateY(-70%);
+    transform: translateY(-80%);
     opacity: 1;
 }
 
-#contacto>section>form>div>label:hover::after,
+/* Textarea */
+#contacto>section>form>.contenedor-text-area>textarea:hover {
+    background: transparent;
+}
+
+#contacto>section>form>.contenedor-text-area>textarea:focus {
+    background: transparent;
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 #contacto>section>form>.contenedor-text-area:hover::after {
     width: 100%;
     opacity: 1;
@@ -75,6 +94,6 @@
 }
 
 #contacto>section>form>.contenedor-text-area:focus-within::before {
-    transform: translateY(-70%);
+    transform: translateY(-80%);
     opacity: 1;
 }

@@ -9,7 +9,7 @@
 h1 {
     font-family: "DancingScript-VariableFont_wght";
     font-weight: 500;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     background: linear-gradient(40deg, var(--blanco), var(--dorado), var(--naranja), var(--negro));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
