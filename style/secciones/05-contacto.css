@@ -20,16 +20,76 @@
     background-image: url("../../img/iconos/encabezados/formulario.png");
 }
 
+#contacto>section>form>p {
+    color: var(--negro);
+    text-align: left;
+}
+
 #contacto>section>form>div {
     width: 100%;
     padding: 5px;
     gap: 15px;
 }
 
+/* Label */
+#contacto>section>form>div>label {
+    color: var(--blanco);
+    text-shadow: 0 0 2px var(--negro);
+}
+
+#contacto>section>form>div>label::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--dorado);
+    transition: all 0.35s;
+}
+
+#contacto>section>form>div>label::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    background-color: var(--dorado);
+    transition: all 0.3s;
+    padding: 1px 2px;
+    border-radius: 5px;
+    transform: translateY(200%);
+    opacity: 0;
+}
+
+/* Textarea */
 #contacto>section>form>.contenedor-text-area {
     width: 100%;
     height: 150px;
     padding: 5px;
+    transition: all 0.05s;
+}
+
+#contacto>section>form>.contenedor-text-area::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--dorado);
+    transition: all 0.35s;
+}
+
+#contacto>section>form>.contenedor-text-area::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    background-color: var(--dorado);
+    transition: all 0.3s;
+    padding: 1px 2px;
+    border-radius: 5px;
+    color: var(--blanco);
+    transform: translateY(200%);
+    opacity: 0;
 }
 
 /* Datos de contacto */

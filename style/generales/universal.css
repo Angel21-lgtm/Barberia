@@ -70,7 +70,7 @@ b {
 }
 
 #portafolio {
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(120deg, #cfc7c7 0%, #ebedee 100%);
 }
 
 #contacto {
@@ -142,15 +142,23 @@ form {
 input {
     background: transparent;
     padding: var(--padding);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.55);
     color: var(--gris);
+    width: 100%;
+    height: auto;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    transition: all 0.3s;
 }
 
 textarea {
     min-width: 100%;
     min-height: 100%;
     padding: var(--padding);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.55);
     color: var(--gris);
-    padding: var(--padding);
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.15);
+    transition: all 0.3s;
+    outline: none;
+    border-radius: 3px;
 }
