@@ -34,12 +34,12 @@
     transform: scale(1.3);
 }
 
-/* SERVICIOS */
+/* PORTAFOLIO */
 /* Foto */
-#servicios>section>.articulo-de-servicios>div>div:hover {
-    transform: translateY(-5px);
+#portafolio>section>.articulo-de-proyectos>div>div:hover {
+    transform: translateY(-8px);
 }
 
-#servicios>section>.articulo-de-servicios>div>div:hover div {
+#portafolio>section>.articulo-de-proyectos>div>div:hover div {
     transform: scale(1);
 }

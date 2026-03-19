@@ -5,10 +5,6 @@
     background-image: url("../../img/iconos/encabezados/barbero.png");
 }
 
-#sobre-nosotros>section>p {
-    max-width: 650px;
-}
-
 /* Locales */
 #sobre-nosotros>section>header {
     gap: 15px;

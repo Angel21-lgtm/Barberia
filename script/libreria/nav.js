@@ -11,6 +11,11 @@ const activarNavResponsive = (nav, boton, clase) => {
     // Evento al hacer click en el botón
     boton.addEventListener("click", () => {
         nav.classList.toggle(clase);
+        if (boton.textContent.trim() === "☰") {
+            boton.textContent = "X";
+        } else {
+            boton.textContent = "☰";
+        }
     });
 }
 

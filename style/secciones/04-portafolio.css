@@ -1,0 +1,79 @@
+/* ESTILOS DE LA SECCIÓN PORTAOLIO */
+
+/* Párrafos y encabezados */
+#portafolio>section>h2>span {
+    background-image: url("../../img/iconos/encabezados/servicios.png");
+}
+
+#portafolio>section>p {
+    color: var(--negro);
+    font-weight: 500;
+}
+
+/* Contenedor de las imágenes del portafolio */
+#portafolio>section>.articulo-de-proyectos {
+    width: 100%;
+    max-width: 1200px;
+    padding: var(--padding);
+}
+
+/* Contenedores de las cards */
+#portafolio>section>.articulo-de-proyectos>div {
+    width: 100%;
+    gap: 10px;
+    padding: var(--padding);
+}
+
+/* Foto */
+#portafolio>section>.articulo-de-proyectos>div>div {
+    width: 100%;
+    height: 250px;
+    flex: 1 1 250px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.32s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.03);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+/* Datos del proyecto */
+#portafolio>section>.articulo-de-proyectos>div>div>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.32s;
+    transform: scale(0);
+    padding: var(--padding);
+    overflow: hidden;
+    gap: 15px;
+}
+
+#portafolio>section>.articulo-de-proyectos>div>div>div>h3>span {
+    background-image: url("../../img/iconos/encabezados/servicios.png");
+}
+
+#portafolio>section>.articulo-de-proyectos>div>div>div>p {
+    font-weight: 500;
+}
+
+#portafolio>section>.articulo-de-proyectos>div>div>div>ul {
+    width: 100%;
+    gap: 15px;
+}
+
+#portafolio>section>.articulo-de-proyectos>div>div>div>ul>li>a {
+    width: 20px;
+    height: 20px;
+}
+
+/* Animación del proyecto completo */
+.proyecto-completo {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}

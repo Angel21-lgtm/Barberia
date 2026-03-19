@@ -1,0 +1,46 @@
+/* ESTILOS DE LA SECCIÓN CONTACTO */
+
+/* Encabezado principal de la sección  */
+#contacto>section>h2>span {
+    background-image: url("../../img/iconos/encabezados/formulario.png");
+}
+
+
+/* Formulario */
+#contacto>section>form {
+    width: 100%;
+    gap: 15px;
+}
+
+#contacto>section>form>h3 {
+    max-width: 300px;
+}
+
+#contacto>section>form>h3>span {
+    background-image: url("../../img/iconos/encabezados/formulario.png");
+}
+
+#contacto>section>form>div {
+    width: 100%;
+    padding: 5px;
+    gap: 15px;
+}
+
+#contacto>section>form>.contenedor-text-area {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+}
+
+/* Datos de contacto */
+.datos-de-contacto {
+    width: 100%;
+    background-color: #010101;
+    min-height: 250px;
+    padding: clamp(1.5rem, 3vw, 3rem);
+    gap: 25px;
+}
+
+.datos-de-contacto>div {
+    flex: 1 1 250px;
+}

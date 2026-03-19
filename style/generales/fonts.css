@@ -68,9 +68,10 @@ p {
     color: var(--blanco);
     text-align: center;
     letter-spacing: 2px;
+    max-width: 650px;
 }
 
-/* Links y botones */
+/* Links, botones y formularios (textarea, inputs, etc) */
 @font-face {
     font-family: "Oswald-VariableFont";
     src: url("../../fonts/Oswald/Oswald-VariableFont_wght.ttf");
@@ -84,5 +85,13 @@ input[type="submit"] {
     font-size: clamp(0.9rem, 2vw, 1.1rem);
     text-align: center;
     cursor: pointer;
+    color: var(--blanco);
+}
+
+input,
+textarea {
+    font-family: "Oswald-VariableFont", sans-serif;
+    font-weight: 300;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     color: var(--blanco);
 }

@@ -5,9 +5,11 @@
 // PROMOCIONES
 import innerHTMLPromociones from "./secciones/01-inicio/backEndInicio.js";
 // SOBRE NOSOTROS
-import backEndSobreNosotros from "./secciones/02-sobre-nosotros/backEndSobreNosotros.js"
+import backEndSobreNosotros from "./secciones/02-sobre-nosotros/backEndSobreNosotros.js";
 // LIBRERÍA DEL NAV
-import nav from "./llibreria/nav.js";
+import nav from "./libreria/nav.js";
+// LIBRERÍA CURSOR
+import humo from "./libreria/cursor.js";
 
 const main = () => {
     // HTML AL DOCUMENTO
@@ -32,6 +34,9 @@ const main = () => {
     const secciones = document.querySelectorAll(".contenedor-de-secciones");
     const itemsNav = document.querySelectorAll(".lista-links-nav");
     nav.activarClaseSeccionActual(secciones, itemsNav, "seccion-actual");
+
+    // ANIMACIONES DEL CURSOR
+    humo();
 }
 
 window.addEventListener("DOMContentLoaded", main);
