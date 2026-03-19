@@ -10,6 +10,13 @@
 #contacto>section>form {
     width: 100%;
     gap: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    /* transparencia base */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 /* Encabezado y tecto */
@@ -19,11 +26,6 @@
 
 #contacto>section>form>h3>span {
     background-image: url("../../img/iconos/encabezados/formulario.png");
-}
-
-#contacto>section>form>p {
-    color: var(--negro);
-    text-align: left;
 }
 
 /* Contenedores de inputs y labels */
@@ -56,11 +58,12 @@
     left: 0;
     background-color: var(--dorado);
     transition: all 0.3s;
-    padding: 1px;
+    padding: 2px;
     border-radius: 5px;
     transform: translateY(200%);
     opacity: 0;
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-size: clamp(0.7rem, 2vw, 1.1rem);
+    z-index: 1;
 }
 
 /* Textarea */
@@ -88,12 +91,13 @@
     left: 0;
     background-color: var(--dorado);
     transition: all 0.3s;
-    padding: 1px;
+    padding: 2px;
     border-radius: 5px;
     color: var(--blanco);
     transform: translateY(200%);
     opacity: 0;
     font-size: clamp(0.9rem, 2vw, 1.1rem);
+    z-index: 1;
 }
 
 /* Datos de contacto */
@@ -101,10 +105,26 @@
     width: 100%;
     background-color: #010101;
     min-height: 250px;
-    padding: clamp(1.5rem, 3vw, 3rem);
+    padding: 1.5rem;
     gap: 25px;
 }
 
 .datos-de-contacto>div {
     flex: 1 1 250px;
+    gap: 10px;
+}
+
+.datos-de-contacto>div p {
+    text-align: justify;
+}
+
+/* Contacto */
+.lista-contacto {
+    width: 100%;
+    gap: 15px;
+}
+
+.lista-contacto>.contacto {
+    width: 30px;
+    height: 30px;
 }

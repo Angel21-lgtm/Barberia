@@ -69,12 +69,11 @@ b {
     background-color: var(--negro);
 }
 
-#portafolio {
-    background-image: linear-gradient(120deg, #cfc7c7 0%, #ebedee 100%);
-}
+#portafolio {}
 
 #contacto {
-    background-color: var(--negro);
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    background-attachment: fixed;
 }
 
 /* Encabezados y párrafos */
@@ -137,12 +136,13 @@ form {
     padding: var(--padding);
     border-radius: 3px;
     max-width: 800px;
+    transition: all 0.3s ease;
 }
 
 input {
     background: transparent;
     padding: var(--padding);
-    color: var(--gris);
+    color: var(--blanco);
     width: 100%;
     height: auto;
     outline: none;

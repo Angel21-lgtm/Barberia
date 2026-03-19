@@ -151,6 +151,19 @@
     gap: 25px;
 }
 
+/* Texto principal de secciones */
+.contenedor-texto-seccion-principal {
+    width: 100%;
+    padding: var(--padding);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.contenedor-texto-seccion-principal>p {
+    text-align: justify;
+}
+
 /* ANIMACIÓN DE IMÁGENES */
 /* Imágen burbuja */
 .imgen-burbuja {
