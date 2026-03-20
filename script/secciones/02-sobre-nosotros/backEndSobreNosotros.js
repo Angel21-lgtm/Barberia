@@ -121,17 +121,17 @@ const innerHTMLCardsBarberos = (contenedor) => {
                 <ul class="display-flex align-items-center justify-content-center">
                     <li class="display-flex align-items-center justify-content-center">
                         <a rel="noopener noreferrer" target="_blank" class="red-social display-flex align-items-center justify-content-center" title="Visítame en Facebook">
-                            <img src="./img/iconos/redes-sociales/facebook-naranja.png" alt="Facebook">
+                            <img src="./img/iconos/redes-sociales/facebook.png" alt="Facebook">
                         </a>
                     </li>
                     <li class="display-flex align-items-center justify-content-center">
                         <a rel="noopener noreferrer" target="_blank" class="red-social display-flex align-items-center justify-content-center" title="Visítame en Instagram">
-                            <img src="./img/iconos/redes-sociales/instagram-naranja.png" alt="Instagram">
+                            <img src="./img/iconos/redes-sociales/instagram.png" alt="Instagram">
                         </a>
                     </li>
                     <li class="display-flex align-items-center justify-content-center">
                         <a rel="noopener noreferrer" target="_blank" class="red-social display-flex align-items-center justify-content-center" title="Visítame en TikTok">
-                            <img src="./img/iconos/redes-sociales/tiktok-naranja.png" alt="TikTok">
+                            <img src="./img/iconos/redes-sociales/tiktok.png" alt="TikTok">
                         </a>
                     </li>
                 </ul>

@@ -77,34 +77,10 @@ b {
     background-attachment: fixed;
 }
 
-#servicios {
-    background: linear-gradient(to bottom,
-            rgba(18, 18, 18, 1) 0%,
-            /* --negro arriba */
-            rgba(233, 119, 20, 0.85) 25%,
-            /* --naranja */
-            rgba(220, 160, 42, 0.6) 50%,
-            /* --dorado */
-            rgba(233, 119, 20, 0.9) 75%,
-            /* --naranja más intenso */
-            rgba(18, 18, 18, 1) 100%
-            /* --negro al final */
-        );
-}
+#servicios {}
 
 #portafolio {
-    background: linear-gradient(to bottom,
-            rgba(18, 18, 18, 1) 0%,
-            /* --negro arriba */
-            rgba(233, 119, 20, 0.85) 25%,
-            /* --naranja */
-            rgba(220, 160, 42, 0.6) 50%,
-            /* --dorado */
-            rgba(233, 119, 20, 0.9) 75%,
-            /* --naranja más intenso */
-            rgba(18, 18, 18, 1) 100%
-            /* --negro al final */
-        );
+    background: linear-gradient(to bottom, rgba(18, 18, 18, 1) 0%, rgba(233, 119, 20, 0.85) 25%, rgba(220, 160, 42, 0.6) 50%, rgba(233, 119, 20, 0.9) 75%, rgba(18, 18, 18, 1) 100%);
 }
 
 #contacto {
