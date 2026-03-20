@@ -23,6 +23,8 @@ html {
     --fondo-negro: linear-gradient(to right, #121212, #2C2C2C);
     --logotipo: radial-gradient(circle at 25% 30%, rgba(220, 160, 42, 0.25), transparent 45%), radial-gradient(circle at 75% 70%, rgba(233, 119, 20, 0.2), transparent 45%), linear-gradient(135deg, #dca02a, #e97714 40%, #2a1a05 100%);
     --padding: clamp(8px, 1vw, 12px);
+    --fondo-seccion-1: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    --fonde-seccion-2: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 /* Nav */
@@ -71,14 +73,42 @@ b {
 }
 
 #sobre-nosotros {
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    background: var(--fondo-seccion-1);
     background-attachment: fixed;
 }
 
-#portafolio {}
+#servicios {
+    background: linear-gradient(to bottom,
+            rgba(18, 18, 18, 1) 0%,
+            /* --negro arriba */
+            rgba(233, 119, 20, 0.85) 25%,
+            /* --naranja */
+            rgba(220, 160, 42, 0.6) 50%,
+            /* --dorado */
+            rgba(233, 119, 20, 0.9) 75%,
+            /* --naranja más intenso */
+            rgba(18, 18, 18, 1) 100%
+            /* --negro al final */
+        );
+}
+
+#portafolio {
+    background: linear-gradient(to bottom,
+            rgba(18, 18, 18, 1) 0%,
+            /* --negro arriba */
+            rgba(233, 119, 20, 0.85) 25%,
+            /* --naranja */
+            rgba(220, 160, 42, 0.6) 50%,
+            /* --dorado */
+            rgba(233, 119, 20, 0.9) 75%,
+            /* --naranja más intenso */
+            rgba(18, 18, 18, 1) 100%
+            /* --negro al final */
+        );
+}
 
 #contacto {
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    background: var(--fondo-seccion-1);
     background-attachment: fixed;
 }
 

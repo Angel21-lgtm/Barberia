@@ -106,7 +106,7 @@ const innerHTMLCardsBarberos = (contenedor) => {
         contenido +=
             `<div class="vidrio card-barbero display-flex flex-direction-column justify-content-center align-items-center">
                 <div class="flex-1">
-                    <img style="animation-duration: ${card.tiempoAnimacion}s;" class="imgen-burbuja" src="${card.imgBarbero}" alt="Foto del barbero">
+                    <img style="animation-duration: ${card.tiempoAnimacion}s;" class="imagen-burbuja" src="${card.imgBarbero}" alt="Foto del barbero">
                 </div>
                 <h4>
                     ${card.nombreDelBarbero}

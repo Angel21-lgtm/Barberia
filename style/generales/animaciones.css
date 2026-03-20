@@ -19,12 +19,12 @@
 
 /* SOBRE NOSOTROS */
 /* Locales cards */
-#sobre-nosotros>section>header>article:hover {
+#sobre-nosotros>section>#cards-sucursales>article:hover {
     transform: rotateX(8deg);
 }
 
 /* Cards de los barberos */
-#sobre-nosotros>section>article>div:hover {
+#sobre-nosotros>section>#cards-barberos>div:hover {
     transform: translateY(-5px);
 }
 
