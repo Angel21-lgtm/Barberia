@@ -7,8 +7,9 @@
 
 /* Locales */
 #sobre-nosotros>section>header {
-    gap: 15px;
+    gap: var(--padding);
     width: 100%;
+    padding: var(--padding);
 }
 
 /* Locales cards */
@@ -53,15 +54,15 @@
 
 /* Card del perfil */
 #sobre-nosotros>section>article {
-    gap: 25px;
-    padding: 10px;
+    gap: var(--padding);
+    width: 100%;
+    padding: var(--padding);
 }
 
 #sobre-nosotros>section>article>div {
     gap: 10px;
     padding: 10px;
     border-radius: 10px;
-    transition: all 0.35s;
 }
 
 #sobre-nosotros>section>article>div>div:first-child {

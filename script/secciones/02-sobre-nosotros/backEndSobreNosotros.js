@@ -7,23 +7,23 @@
 const backEndSucursales = [
     {
         mapa: `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3687.020480390165!2d-99.3366!3d19.3055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdf8682a38d35d%3A0xd1f0dcade11cd38f!2sC.%20Llano%20Grande%208%2C%20La%20Pila%2C%20Cuajimalpa%20de%20Morelos%2C%2005750%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e1!3m2!1ses!2smx!4v1773848006067!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
-        encabezadoPrincipal: "SUCURSAL 1",
-        textoPrincipal: "<strong>ipsum dolor</strong> ipsum dolor sit amet consectetur, adipisicing elit.",
-        title: "Ubicación de la sucursal 1",
+        encabezadoPrincipal: "Sucursal Centro",
+        textoPrincipal: "Ubicada en el corazón de <strong>Ciudad de México</strong>, ideal para tu <strong>corte y arreglo de barba</strong>.",
+        title: "Ir a Sucursal Centro",
         href: "#",
     },
     {
         mapa: `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3687.020480390165!2d-99.3366!3d19.3055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdf8682a38d35d%3A0xd1f0dcade11cd38f!2sC.%20Llano%20Grande%208%2C%20La%20Pila%2C%20Cuajimalpa%20de%20Morelos%2C%2005750%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e1!3m2!1ses!2smx!4v1773848006067!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
-        encabezadoPrincipal: "SUCURSAL 2",
-        textoPrincipal: "Lorem ipsum dolor sit amet consectetur, <strong>ipsum dolor</strong>.",
-        title: "Ubicación de la sucursal 2",
+        encabezadoPrincipal: "Sucursal Polanco",
+        textoPrincipal: "Visítanos en <b>Polanco</b>, <strong>Ciudad de México</strong>, y disfruta de un servicio profesional y cómodo.",
+        title: "Ir a Sucursal Polanco",
         href: "#",
     },
     {
         mapa: `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3687.020480390165!2d-99.3366!3d19.3055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdf8682a38d35d%3A0xd1f0dcade11cd38f!2sC.%20Llano%20Grande%208%2C%20La%20Pila%2C%20Cuajimalpa%20de%20Morelos%2C%2005750%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e1!3m2!1ses!2smx!4v1773848006067!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
-        encabezadoPrincipal: "SUCURSAL 3",
-        textoPrincipal: "Lorem <strong>ipsum dolor</strong> sit amet consectetur, adipisicing elit.",
-        title: "Ubicación de la sucursal 3",
+        encabezadoPrincipal: "Sucursal Coyoacán",
+        textoPrincipal: "Encuéntranos en <strong>Coyoacán</strong>, <b>Ciudad de México</b>, para cortes de cabello con estilo único.",
+        title: "Ir a Sucursal Coyoacán",
         href: "#",
     },
 ];
@@ -33,7 +33,7 @@ const innerHTMLCardsSucursales = (contenedor) => {
     let contenido = "";
 
     backEndSucursales.forEach(sucursal => {
-        contenido += `<article class="display-flex align-items-center justify-content-center">
+        contenido += `<article class="vidrio display-flex align-items-center justify-content-center">
                         <div class="flex-1 display-flex align-items-center justify-content-center flex-direction-column">
                             <div class="display-flex flex-direction-column align-items-center justify-content-center">
                                 ${sucursal.mapa}
@@ -62,8 +62,8 @@ const innerHTMLCardsSucursales = (contenedor) => {
 const backEndBarberos = [
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-1.avif",
-        nombreDelBarbero: "NOMBRE DEL BARBERO",
-        textoDeSuPerfil: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt id, autem quisquam <b>ipsum</b>.",
+        nombreDelBarbero: "CARLOS MARQUEZ",
+        textoDeSuPerfil: "Carlos Marquez es un barbero especializado en <strong>cortes clásicos y modernos</strong>, conocido por su precisión y atención al detalle..",
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
@@ -71,8 +71,8 @@ const backEndBarberos = [
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-2.avif",
-        nombreDelBarbero: "NOMBRE DEL BARBERO",
-        textoDeSuPerfil: "Lorem ipsum dolor sit amet <b>ipsum</b> adipisicing elit. Qui deserunt id, autem quisquam dolorenisi.",
+        nombreDelBarbero: "EDSON GUEVARA",
+        textoDeSuPerfil: "Edson Guevara combina creatividad y técnica avanzada para crear <b>estilos</b> únicos que realzan la personalidad de cada <strong>cliente</strong>.",
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
@@ -80,8 +80,8 @@ const backEndBarberos = [
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-3.avif",
-        nombreDelBarbero: "NOMBRE DEL BARBERO",
-        textoDeSuPerfil: "Lorem <b>ipsum</b> dolor sit amet consectetur adipisicing elit. Qui deserunt id, autem quisquam dolorenisi.",
+        nombreDelBarbero: "NORBERTO GONZALEZ",
+        textoDeSuPerfil: "Norberto Gonzalez es experto en <strong>arreglo de barba</strong> y <strong>cortes de tendencia</strong>, brindando siempre un servicio profesional y cercano.",
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
@@ -89,8 +89,8 @@ const backEndBarberos = [
     },
     {
         imgBarbero: "./img/secciones/sobre-nosotros/barberos/barbero-4.avif",
-        nombreDelBarbero: "NOMBRE DEL BARBERO",
-        textoDeSuPerfil: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui <b>ipsum</b> id, autem quisquam dolorenisi.",
+        nombreDelBarbero: "EDUARDO OLVERA",
+        textoDeSuPerfil: "Eduardo Olvera destaca por su atención al detalle y su pasión por ofrecer un <b>estilo moderno y elegante</b> a cada cliente.",
         hrefFacebook: "#",
         hrefInstagram: "#",
         hrefTikTok: "#",
@@ -104,7 +104,7 @@ const innerHTMLCardsBarberos = (contenedor) => {
 
     backEndBarberos.forEach(card => {
         contenido +=
-            `<div class="card-barbero display-flex flex-direction-column justify-content-center align-items-center">
+            `<div class="vidrio card-barbero display-flex flex-direction-column justify-content-center align-items-center">
                 <div class="flex-1">
                     <img style="animation-duration: ${card.tiempoAnimacion}s;" class="imgen-burbuja" src="${card.imgBarbero}" alt="Foto del barbero">
                 </div>
@@ -115,7 +115,7 @@ const innerHTMLCardsBarberos = (contenedor) => {
                     ${card.textoDeSuPerfil}
                 </p>
                 <h3>
-                    REDES SOCIALES
+                    Redes sociales
                     <span></span>
                 </h3>
                 <ul class="display-flex align-items-center justify-content-center">

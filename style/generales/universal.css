@@ -41,7 +41,11 @@ nav {
 /* strong y b */
 strong,
 b {
-    color: var(--naranja);
+    background: linear-gradient(40deg, var(--blanco), var(--dorado), var(--naranja), var(--negro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     text-transform: uppercase;
     font-weight: 500;
     font-family: "Oswald-VariableFont", sans-serif;
@@ -67,7 +71,8 @@ b {
 }
 
 #sobre-nosotros {
-    background-color: var(--negro);
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    background-attachment: fixed;
 }
 
 #portafolio {}
@@ -133,11 +138,9 @@ img {
 
 /* Formularios */
 form {
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     padding: var(--padding);
     border-radius: 3px;
     max-width: 800px;
-    transition: all 0.3s ease;
 }
 
 input {
