@@ -70,12 +70,12 @@ const main = () => {
     // ANIMACIONES DEL CURSOR
 }
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
 
-    let timer = setTimeout(() => {
+    main();
+
+    setTimeout(() => {
         const contenedorLoad = document.getElementById("load");
         contenedorLoad.classList.add("quitar-load");
     }, 4000);
-
-    main();
 });

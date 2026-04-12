@@ -22,14 +22,16 @@
 
 /* Letras de la carga */
 .letra-load {
-    font-weight: 900;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    color: var(--naranja);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #ffae00;
+    text-shadow: 0 0 5px #ffae00, 0 0 10px #ffae00, 0 0 20px #ff6a00, 0 0 40px #ff4500;
     opacity: 0;
     animation: letra-load 3s linear infinite;
 }
 
 .letra-load:nth-child(1) {
+    color: var(--blanco);
     animation-delay: 0s;
 }
 
@@ -88,13 +90,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--blanco);
+    background: var(--logotipo);
     animation: cargaAnimacion 3s linear infinite;
 }
 
 /* Quitar el contenedor load después de la animación */
 .quitar-load {
-    animation: quitar-load 0.5s ease forwards;
+    animation: quitar-load 1s ease forwards;
 }
 
 @keyframes quitar-load {
@@ -108,7 +110,6 @@
 
     100% {
         opacity: 0;
-        display: none;
         z-index: -10000;
     }
 }
