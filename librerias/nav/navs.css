@@ -1,0 +1,177 @@
+/* LIBRERÍA DE ESTILOS PARA EL NAV */
+
+/* NAV IZQUIERDO CON LOGOTIPO 1 */
+/* Activar el nav */
+/* La clase va en el nav al presionar el botón del menú desplegable */
+.activar-nav-logotipo-1 {
+    transform: translateX(0);
+}
+
+/* Botón del menú desplegable */
+#boton-menu-desplegable-nav-logotipo-1 {
+    right: 15px;
+    top: 15px;
+    z-index: 1000;
+}
+
+/* Contenedor nav */
+/* La clase va en el contenedor nav */
+.nav-izquierdo-logotipo-1 {
+    z-index: 1000;
+    width: 80px;
+    height: 100dvh;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    gap: 10px;
+    background: linear-gradient(to right, #121212, #2C2C2C);
+    transition: transform 0.25s ease-in;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    transform: translateX(0);
+}
+
+/* Contenedor del logotipo */
+/* La clase va en el div del logotipo dentro del nav */
+.logotipo-nav-logotipo-1 {
+    height: 60px;
+}
+
+/* Contenedor ul del nav */
+/* La clase va en el ul del nav */
+.ul-navegador-de-secciones-logotipo-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+/* Lista de secciones */
+/* La clase va en el li del ul del nav */
+.lista-links-nav-logotipo-1 {
+    width: 100%;
+    padding: 4px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+
+/* Links de navegación */
+/* La clase va en el a dentro del li del ul del nav */
+.link-nav-logotipo-1 {
+    overflow: hidden;
+    font-weight: 100;
+    padding: 2px 0;
+    font-size: 0.8rem;
+    transition: color 0.25s ease;
+    position: relative;
+    display: inline-block;
+    color: #F5F5F5;
+}
+
+.link-nav-logotipo-1:hover {
+    color: #dca02a;
+}
+
+.link-nav-logotipo-1::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #e97714;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    opacity: 0;
+}
+
+.link-nav-logotipo-1:hover::after {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Estilos de la activación del nav sobre secciones */
+/* La clase seccion-actual va en el li del ul del nav que corresponda a la sección actual (se pone en el primer li) */
+.seccion-actual>.link-nav-logotipo-1 {
+    color: #e97714;
+    font-weight: 900;
+    font-size: x-small;
+    text-shadow: 2px 2px #121212;
+}
+
+.seccion-actual::after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 15px;
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid #dca02a;
+    border-bottom: 2px solid #dca02a;
+}
+
+.seccion-actual::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 0;
+    border-top: 2px solid #dca02a;
+    border-left: 2px solid #dca02a;
+}
+
+/* Estilos del nav de las redes sociales */
+.ul-navegador-de-redes-sociales-nav-logotipo-1 {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 0;
+}
+
+.li-navegador-de-redes-sociales-nav-logotipo-1 {
+    width: clamp(24px, 3vw, 30px);
+    height: clamp(24px, 3vw, 30px);
+    flex: 1;
+}
+
+/* Contenedor de secciones */
+/* La clase va en el contenedor de secciones principales (main, section, article, header, footer, etc.) */
+.contenedor-secciones-nav-logotipo-1 {
+    width: calc(100% - 80px);
+    min-height: 100vh;
+    margin-left: 80px;
+}
+
+/* Responsivo del nav izquierdo con logotipo 1 */
+/* 4. Tablets verticales / móviles grandes */
+@media screen and (max-width: 768px) {
+    /* Tablets verticales y teléfonos grandes */
+
+    /* Botón del menú desplegable */
+    #boton-menu-desplegable-nav-logotipo-1 {
+        display: flex;
+    }
+
+    /* Contenedor nav */
+    .nav-izquierdo-logotipo-1 {
+        transform: translateX(-100%);
+    }
+
+    .nav-izquierdo-logotipo-1.activar-nav-logotipo-1 {
+        transform: translateX(0);
+    }
+
+    /* Contenedor de secciones */
+    .contenedor-secciones-nav-logotipo-1 {
+        width: 100%;
+        margin-left: 0;
+    }
+}

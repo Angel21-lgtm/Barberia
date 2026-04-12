@@ -23,28 +23,6 @@
 @media screen and (max-width: 768px) {
     /* Tablets verticales y teléfonos grandes */
 
-    /* NAV */
-    /* Botón del menú desplegable */
-    #inicio>#boton-menu-desplegable {
-        display: flex;
-    }
-
-    nav {
-        transform: translateX(-100%);
-    }
-
-    /* SECTIONS */
-    /* Contenedores principales */
-    #inicio,
-    #sobre-nosotros,
-    #servicios,
-    #portafolio,
-    #tienda,
-    #contacto {
-        width: 100% !important;
-        margin-left: 0 !important;
-    }
-
     /* PORTAFOLIO */
     /* Animación del proyecto completo */
     #visualizacion-del-proyecto {

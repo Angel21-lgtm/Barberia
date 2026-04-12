@@ -4,13 +4,12 @@
 
 // Activar nav mediante un botón responsivo
 const activarNavResponsive = (nav, boton, clase) => {
-    /* Prevención de errorres si no existe
-    el contenedor nav ni el boton */
     if (!nav || !boton) return;
 
-    // Evento al hacer click en el botón
+    // Cambiar texto del botón al activar o desactivar NAV
     boton.addEventListener("click", () => {
         nav.classList.toggle(clase);
+
         if (boton.textContent.trim() === "☰") {
             boton.textContent = "X";
         } else {
@@ -24,7 +23,6 @@ de las secciones deacuerdo a la posición de la sección actual.
 Es mediante li = contenedor padre y a =  contenedor hijo */
 const activarClaseSeccionActual = (secciones, itemsNav, clase) => {
     window.addEventListener("scroll", () => {
-
         const scrollY = window.scrollY;
 
         for (const seccion of secciones) {

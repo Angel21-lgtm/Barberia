@@ -16,11 +16,12 @@
     padding: var(--padding);
 }
 
-/* Contenedores de las cards */
+/* Contenedores de las cards (fotos) */
 #portafolio>section>.articulo-de-proyectos>div {
     width: 100%;
     gap: 10px;
     padding: var(--padding);
+    perspective: 3000px;
 }
 
 /* Foto */
@@ -64,17 +65,8 @@
     font-weight: 500;
 }
 
-#portafolio>section>.articulo-de-proyectos>div>div>div>ul {
-    width: 100%;
-    gap: 15px;
-}
-
-#portafolio>section>.articulo-de-proyectos>div>div>div>ul>li>a {
-    width: 20px;
-    height: 20px;
-}
-
 /* Animación del proyecto completo */
+/* Contenedor del proyecto */
 #visualizacion-del-proyecto {
     width: calc(100% - 80px);
     height: 100vh;
@@ -90,6 +82,7 @@
     padding: var(--padding);
 }
 
+/* Encabezado y párrafo de la visualización proyecto */
 #visualizacion-del-proyecto>h3 {
     min-width: 200px;
     font-weight: 900;
@@ -107,6 +100,7 @@
     border-radius: 5px;
 }
 
+/* Contenedor del video */
 #visualizacion-del-proyecto>div>video {
     width: 100%;
     height: 100%;
@@ -114,6 +108,7 @@
     object-fit: cover;
 }
 
+/* Botón para cerrar la visualización del proyecto */
 #visualizacion-del-proyecto>button {
     background-color: transparent;
     left: 10px;

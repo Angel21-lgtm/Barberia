@@ -27,19 +27,6 @@ html {
     --fondo-seccion-2: linear-gradient(to bottom, rgba(18, 18, 18, 1) 0%, rgba(233, 119, 20, 0.85) 25%, rgba(220, 160, 42, 0.6) 50%, rgba(233, 119, 20, 0.9) 75%, rgba(18, 18, 18, 1) 100%);
 }
 
-/* Nav */
-nav {
-    z-index: 1000;
-    width: 80px;
-    height: 100vh;
-    padding: 10px;
-    left: 0;
-    top: 0;
-    gap: 10px;
-    background: var(--fondo-negro);
-    transition: all ease-in 0.25s;
-}
-
 /* strong y b */
 strong,
 b {
@@ -54,17 +41,6 @@ b {
 }
 
 /* Contenedores principales */
-#inicio,
-#sobre-nosotros,
-#servicios,
-#portafolio,
-#tienda,
-#contacto {
-    width: calc(100% - 80px);
-    min-height: 100vh;
-    margin-left: 80px;
-}
-
 #inicio {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.10) 10%, rgba(0, 0, 0, 0.55) 40%, rgba(0, 0, 0, 0.95) 75%, var(--negro) 100%), url("../../img/secciones/inicio/fondo-inicio.jpg");
     background-position: center;

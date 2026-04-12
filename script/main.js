@@ -6,16 +6,30 @@
 import innerHTMLPromociones from "./secciones/01-inicio/backEndInicio.js";
 // SOBRE NOSOTROS
 import backEndSobreNosotros from "./secciones/02-sobre-nosotros/backEndSobreNosotros.js";
+// SERVICIOS
+import backEndServicios from "./secciones/03-servicios/backEndServicios.js";
 // PORTAFOLIO
 import backEndPortafolio from "./secciones/04-portafolio/backEndPortafolio.js";
 import visualizarProyecto from "./secciones/04-portafolio/visualizarProyecto.js";
-// LIBRERÍA DEL NAV
-import nav from "./libreria/nav.js";
-// LIBRERÍA CURSOR
-import humo from "./libreria/cursor.js";
+
+// LIBRERÍAS
+// Nav
+import nav from "../librerias/nav/nav.js";
+// Cards
+import cards from "../librerias/cards/cards.js";
+// cursor
 
 const main = () => {
-    // HTML AL DOCUMENTO
+    // NAV
+    const navIzquierdoLogotipo1 = document.querySelector(".nav-izquierdo-logotipo-1");
+    const botonMenuDesplegable = document.getElementById("boton-menu-desplegable-nav-logotipo-1");
+    nav.activarNavResponsive(navIzquierdoLogotipo1, botonMenuDesplegable, "activar-nav-logotipo-1");
+
+    // Navegación del nav logotipo 1
+    const secciones = document.querySelectorAll(".contenedor-de-secciones");
+    const itemsNav = document.querySelectorAll(".lista-links-nav-logotipo-1");
+    nav.activarClaseSeccionActual(secciones, itemsNav, "seccion-actual");
+
 
     // INICIO 
     // Promociones
@@ -30,6 +44,10 @@ const main = () => {
     // Barberos
     const cardsBarberos = document.getElementById("cards-barberos");
     backEndSobreNosotros.innerHTMLCardsBarberos(cardsBarberos);
+
+    // SERVICIOS
+    // Servicios
+    cards.card1(backEndServicios.backEndServicios);
 
     // PORTAFOLIO
     // Elementos del HTML
@@ -49,20 +67,13 @@ const main = () => {
     visualizarProyecto("transicion-visualizacion-del-proyecto", botonVisualizarProyectoSegundoApartado, visualizacionDelProyecto, botonCerrarProyecto, backEndPortafolio.backEndPortafolio[1]);
     visualizarProyecto("transicion-visualizacion-del-proyecto", botonVisualizarProyectoTercerApartado, visualizacionDelProyecto, botonCerrarProyecto, backEndPortafolio.backEndPortafolio[2]);
 
-
-    // FUNCIONES DEL NAV
-    // Nav responsive
-    const contenedorNav = document.querySelector("nav");
-    const botonMenuDesplegable = document.getElementById("boton-menu-desplegable");
-    nav.activarNavResponsive(contenedorNav, botonMenuDesplegable, "activar-nav");
-
-    // Navegación del nav
-    const secciones = document.querySelectorAll(".contenedor-de-secciones");
-    const itemsNav = document.querySelectorAll(".lista-links-nav");
-    nav.activarClaseSeccionActual(secciones, itemsNav, "seccion-actual");
-
     // ANIMACIONES DEL CURSOR
-    humo();
 }
 
-window.addEventListener("DOMContentLoaded", main);
+window.addEventListener("load", () => {
+
+    const load = document.getElementById("load");
+    load.classList.add("quitar-load");
+
+    main();
+});

@@ -1,0 +1,11 @@
+/* ESTILOS DE LA SECCIÓN SERVICIOS */
+
+/* Encabezado principal */
+#servicios>section>h2>span {
+    background-image: url("../../img/iconos/encabezados/servicios.png");
+}
+
+/* Cards de servicios */
+#servicios>section>#cont-card-1 h3>span {
+    background-image: url("../../img/iconos/encabezados/servicios.png");
+}

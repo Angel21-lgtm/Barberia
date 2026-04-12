@@ -6,12 +6,12 @@
     padding: 10px 15px;
     border-radius: 3px;
     background-color: var(--naranja);
-
     box-shadow: 3px 3px 8px var(--negro);
-    transition: all 0.1s ease;
+    transition: transform ease 0.1s, box-shadow ease 0.1s, text-shadow ease 0.1s;
     overflow: hidden;
     font-weight: 500;
     text-shadow: 1px 1px 3px var(--negro);
+    position: relative;
 }
 
 .boton-1:hover {
@@ -46,7 +46,7 @@
     font-weight: 900;
     font-size: 2.5rem;
     border-radius: 10px;
-    transition: all 0.25s;
+    transition: color 0.25s, transform 0.25s;
     background-color: transparent;
     text-shadow: 1px 1px 3px #000;
 }
@@ -210,11 +210,14 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
+    transition: background ease 0.3s, box-shadow ease 0.3s;
 }
 
 .vidrio:hover {
     background: rgba(255, 255, 255, 0.12);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    background-color: re;
+}
+
+.background-naranja {
+    background: var(--naranja);
 }

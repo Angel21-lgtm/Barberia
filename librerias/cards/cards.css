@@ -1,0 +1,70 @@
+/* LIBRERÍA PARA ESTILOS DE DISTINTAS CARDS */
+
+/* Estilos de la "card 1" */
+/* Esta clase va en el contenedor de las cards */
+#cont-card-1 {
+    gap: 10px;
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Esta clase va en el contenedor de cada card */
+.card-1 {
+    max-height: 300px;
+    gap: 10px;
+    position: relative;
+    border-radius: 3px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-1:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    transform: scale(1.01);
+}
+
+/* Esta clase va en el contenedor del texto, botones y encabezado de cada card */
+.info-card-1 {
+    background-color: #F5F5F5;
+    content: attr(data-text);
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity ease 0.3s, background-color ease 0.3s;
+}
+
+.info-card-1>p {
+    color: #dca02a;
+    font-weight: 500;
+}
+
+@keyframes opacityAnimation {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.card-1:hover .info-card-1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    animation: opacityAnimation 0.5s ease forwards;
+}

@@ -110,7 +110,7 @@ const innerHTMLProyectos = (contenedorPrincipal, proyectos) => {
                             </p>
                             <ul class="display-flex justify-content-center">
                                 <li>
-                                    <button class="${proyecto.claseProyecto} position-relative boton-1">
+                                    <button class="${proyecto.claseProyecto} boton-1">
                                         Ver proyecto
                                     </button>
                                 </li>

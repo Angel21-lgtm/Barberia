@@ -16,7 +16,7 @@
 #sobre-nosotros>section>#cards-sucursales>article {
     padding: 10px;
     border-radius: 10px;
-    transition: transform 0.4s ease;
+    transition: transform ease 0.4s;
     transform-style: preserve-3d;
     gap: 5px;
 }
@@ -63,7 +63,13 @@
     gap: 10px;
     padding: 10px;
     border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: transform ease 0.3s, background-color ease 0.3s, box-shadow ease 0.3s;
 }
+
 
 #sobre-nosotros>section>#cards-barberos>div>div:first-child {
     padding: 2px;

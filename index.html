@@ -6,99 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Barbería en Ciudad de México especializada en cortes de cabello para hombre, arreglo de barba y estilo masculino. Agenda tu cita hoy.">
+
+    <!-- Título de la página -->
     <title>Barbería en Ciudad de México | Cortes de cabello y arreglo de barba</title>
+
     <!-- LOGOTIPO WEB-->
     <link rel="shortcut icon" href="./img/iconos/logotipo/logotipo-negro.png" type="image/png">
+
     <!-- ESTILOS -->
-    <!-- Librería -->
-    <link rel="stylesheet" href="./style/librerías/display.css">
-    <link rel="stylesheet" href="./style/librerías/flex-box.css">
-    <link rel="stylesheet" href="./style/librerías/grid.css">
-    <link rel="stylesheet" href="./style/librerías/position.css">
+    <!-- LIBRERÍAS -->
+    <link rel="stylesheet" href="./librerias/cursores/cursores.css">
+    <!-- Cards -->
+    <link rel="stylesheet" href="./librerias/cards/cards.css">
+    <!-- Nav -->
+    <link rel="stylesheet" href="./librerias/nav/navs.css">
+    <!-- Flex Grid Position Display -->
+    <link rel="stylesheet" href="./librerias/flex-grid-position-display/display.css">
+    <link rel="stylesheet" href="./librerias/flex-grid-position-display/flex-box.css">
+    <link rel="stylesheet" href=".//librerias/flex-grid-position-display/grid.css">
+    <link rel="stylesheet" href=".//librerias/flex-grid-position-display/position.css">
+
     <!-- Generales -->
     <link rel="stylesheet" href="./style/generales/animaciones.css">
     <link rel="stylesheet" href="./style/generales/fonts.css">
     <link rel="stylesheet" href="./style/generales/reciclados.css">
     <link rel="stylesheet" href="./style/generales/responsive.css">
     <link rel="stylesheet" href="./style/generales/universal.css">
+
     <!-- Secciones -->
     <link rel="stylesheet" href="./style/secciones/0-load.css">
     <link rel="stylesheet" href="./style/secciones/01-inicio.css">
     <link rel="stylesheet" href="./style/secciones/02-sobre-nosotros.css">
+    <link rel="stylesheet" href="./style/secciones/03-servicios.css">
     <link rel="stylesheet" href="./style/secciones/04-portafolio.css">
     <link rel="stylesheet" href="./style/secciones/05-contacto.css">
 </head>
 
 <body>
     <!------------------------------------------------------------------------------------------------------------------------------------>
-    <!-- LOAD-->
-    <section id="load" class="position-fixed display-none">
-        <img src="" alt="">
+    <!-- LOAD -->
+    <section id="load"
+        class="position-fixed display-flex align-items-center justify-content-center flex-direction-column">
+        <p class="display-flex align-items-center justify-content-center position-relative">
+            <span class="letra-load display-inline-block">C</span>
+            <span class="letra-load display-inline-block">a</span>
+            <span class="letra-load display-inline-block">r</span>
+            <span class="letra-load display-inline-block">c</span>
+            <span class="letra-load display-inline-block">a</span>
+            <span class="letra-load display-inline-block">r</span>
+            <span class="letra-load display-inline-block">g</span>
+            <span class="letra-load display-inline-block">a</span>
+            <span class="letra-load display-inline-block">n</span>
+            <span class="letra-load display-inline-block">d</span>
+            <span class="letra-load display-inline-block">o</span>
+        </p>
+
+        <span class="carga display-inline-block"></span>
     </section>
-    <!-- LOAD-->
+    <!-- LOAD -->
     <!------------------------------------------------------------------------------------------------------------------------------------>
 
     <!------------------------------------------------------------------------------------------------------------------------------------>
     <!-- SECCIÓN HEADER (CABECERA) -->
-    <header id="inicio" class="contenedor-de-secciones display-flex">
+    <header id="inicio" class="contenedor-secciones-nav-logotipo-1 contenedor-de-secciones display-flex">
         <!-- Botón del menú desplegable -->
-        <button id="boton-menu-desplegable"
+        <button id="boton-menu-desplegable-nav-logotipo-1"
             class="boton-2 position-fixed display-none align-items-center justify-content-center">
             &#9776;
         </button>
         <!-- Botón del menú desplegable -->
 
         <!-- Navegación de secciones -->
-        <nav class="display-flex flex-direction-column position-fixed">
+        <nav class="nav-izquierdo-logotipo-1">
             <!-- Logotipo -->
-            <div class="logotipo imagen-burbuja">
+            <div class="logotipo logotipo-nav-logotipo-1  imagen-burbuja">
                 <img src="./img/iconos/logotipo/logotipo-blanco.png" alt="Logotipo">
             </div>
             <!-- Logotipo -->
 
             <!-- Lista de navegación-->
-            <ul
-                class="ul-navegador-de-secciones display-flex flex-direction-column justify-content-space-evenly align-items-center flex-1">
-                <li
-                    class="lista-links-nav flex-1 display-flex align-items-center justify-content-center position-relative seccion-actual">
-                    <a class="position-relative display-inline-block" title="Sección principal" href="#inicio">
+            <ul class="ul-navegador-de-secciones-logotipo-1">
+                <li class="lista-links-nav-logotipo-1 seccion-actual">
+                    <a class="link-nav-logotipo-1 position-relative" title="Sección principal" href="#inicio">
                         INICIO
                     </a>
                 </li>
 
-                <li
-                    class="lista-links-nav flex-1 display-flex align-items-center justify-content-center position-relative">
-                    <a class="position-relative display-inline-block" title="Descripción de nosotros"
+                <li class="lista-links-nav-logotipo-1">
+                    <a class="link-nav-logotipo-1 position-relative" title="Descripción de nosotros"
                         href="#sobre-nosotros">
                         SOBRE NOSOTROS
                     </a>
                 </li>
 
-                <li
-                    class="lista-links-nav flex-1 display-flex align-items-center justify-content-center position-relative">
-                    <a class="position-relative display-inline-block" title="Servicios que ofrecemos (catálogo)"
+                <li class="lista-links-nav-logotipo-1">
+                    <a class="link-nav-logotipo-1 position-relative" title="Servicios que ofrecemos (catálogo)"
                         href="#servicios">
                         SERVICIOS
                     </a>
                 </li>
 
-                <li
-                    class="lista-links-nav flex-1 display-flex align-items-center justify-content-center position-relative">
-                    <a class="position-relative display-inline-block" title="Nuestro trabajo" href="#portafolio">
+                <li class="lista-links-nav-logotipo-1">
+                    <a class="link-nav-logotipo-1 position-relative" title="Nuestro trabajo" href="#portafolio">
                         PORTAFOLIO
                     </a>
                 </li>
 
-                <li class="flex-1 display-flex align-items-center justify-content-center">
-                    <a rel="noopener noreferrer" class="position-relative display-inline-block tienda"
-                        title="Grandes ofertas de productos para ustedes" href="./tienda.html" target="_blank">
+                <li class="lista-links-nav-logotipo-1">
+                    <a rel="noopener noreferrer" class="link-nav-logotipo-1 tienda"
+                        title="Grandes ofertas de productos para ustedes" target="_blank">
                         TIENDA
                     </a>
                 </li>
 
-                <li
-                    class="lista-links-nav flex-1 display-flex align-items-center justify-content-center position-relative">
-                    <a class="position-relative display-inline-block" title="Contáctanos" href="#contacto">
+                <li class="lista-links-nav-logotipo-1">
+                    <a class="link-nav-logotipo-1 position-relative" title="Contáctanos" href="#contacto">
                         CONTACTO
                     </a>
                 </li>
@@ -106,19 +128,18 @@
             <!-- Lista de navegación-->
 
             <!-- Lista de redes sociales -->
-            <ul
-                class="ul-navegador-de-redes-sociales display-flex flex-direction-column justify-content-space-evenly align-items-center flex-0">
-                <li class="flex-1">
+            <ul class="ul-navegador-de-redes-sociales-nav-logotipo-1">
+                <li class="li-navegador-de-redes-sociales-nav-logotipo-1">
                     <a rel="noopener noreferrer" target="_blank" class="red-social" title="Visítanos en Facebook">
                         <img src="./img/iconos/redes-sociales/facebook.png" alt="Facebook">
                     </a>
                 </li>
-                <li class="flex-1">
+                <li class="li-navegador-de-redes-sociales-nav-logotipo-1">
                     <a rel="noopener noreferrer" target="_blank" class="red-social" title="Visítanos en Instagram">
                         <img src="./img/iconos/redes-sociales/instagram.png" alt="Instagram">
                     </a>
                 </li>
-                <li class="flex-1">
+                <li class="li-navegador-de-redes-sociales-nav-logotipo-1">
                     <a rel="noopener noreferrer" target="_blank" class="red-social" title="Visítanos en TikTok">
                         <img src="./img/iconos/redes-sociales/tiktok.png" alt="TikTok">
                     </a>
@@ -155,7 +176,7 @@
 
                 <div class="flex-1 contenedor-button-header display-flex align-items-center justify-content-center">
                     <button class="boton-1 position-relative">
-                        Agendar cita
+                        Reservar cita
                     </button>
                 </div>
                 <!-- Promociones -->
@@ -175,7 +196,7 @@
 
     <!------------------------------------------------------------------------------------------------------------------------------------>
     <!-- SECCIÓN SOBRE NUESTRA DESCRIPCIÓN (Sobre nosotros) -->
-    <section id="sobre-nosotros" class="contenedor-de-secciones">
+    <section id="sobre-nosotros" class="contenedor-secciones-nav-logotipo-1 contenedor-de-secciones">
 
         <section class="seccion-contenedora-principal display-flex flex-direction-column align-items-center">
             <!-- Encabezado principal de la sección -->
@@ -252,7 +273,7 @@
 
     <!------------------------------------------------------------------------------------------------------------------------------------>
     <!-- SECCIÓN PRINCIPAL MAIN SOBRE SERVICIOS OFRECIDOS -->
-    <main id="servicios" class="contenedor-de-secciones">
+    <main id="servicios" class="contenedor-secciones-nav-logotipo-1 contenedor-de-secciones">
         <section class="seccion-contenedora-principal display-flex flex-direction-column align-items-center">
             <!-- Encabezado principal de la sección -->
             <h2>
@@ -261,17 +282,37 @@
             </h2>
             <p>
                 Ofrecemos <strong>cortes de cabello para hombre en CDMX</strong>,
-                <strong>arreglo de barba profesional</strong>, afeitado clásico y
-                servicios de <strong>cuidado masculino</strong> adaptados a tu estilo.
+                arreglo de barba profesional, afeitado clásico y
+                servicios de cuidado masculino adaptados a tu estilo.
             </p>
             <!-- Encabezado principal de la sección -->
+
+            <!-- Imágenes de los servicios -->
+            <article id="cont-card-1" class="display-grid grid-columns-minmax-250px-1fr">
+            </article>
+            <!-- Imágenes de los servicios -->
+
+            <div class="contenedor-texto-seccion-principal">
+                <p>
+                    Ofrecemos <strong>servicios de peluquería profesional</strong> para hombres y mujeres, enfocados en
+                    resaltar tu estilo y personalidad. Realizamos <strong>cortes de cabello modernos</strong>,
+                    <strong>tintes</strong> y <strong>tratamientos capilares</strong> con productos de alta calidad,
+                    garantizando resultados duraderos y un look impecable.
+                </p>
+                <p>
+                    Nuestro equipo de expertos en <strong>estética y cuidado del cabello</strong> trabaja con técnicas
+                    actualizadas para brindarte la mejor experiencia. Nos especializamos en <strong>cambios de
+                        imagen</strong>, <strong>peinados</strong> y <strong>servicios de belleza</strong> que te
+                    ayudarán a lucir increíble y a <strong>potenciar tu confianza</strong>.
+                </p>
+            </div>
     </main>
     <!-- SECCIÓN PRINCIPAL MAIN SOBRE SERVICIOS OFRECIDOS -->
     <!------------------------------------------------------------------------------------------------------------------------------------>
 
     <!------------------------------------------------------------------------------------------------------------------------------------>
     <!-- SECCIÓN DEL PORTAFOLIO WEB DE LA BARBERÍA (PROYECTOS) -->
-    <section id="portafolio" class="contenedor-de-secciones">
+    <section id="portafolio" class="contenedor-secciones-nav-logotipo-1 contenedor-de-secciones">
         <section class="seccion-contenedora-principal display-flex flex-direction-column align-items-center">
             <!-- Encabezado principal de la sección -->
             <h2>
@@ -323,7 +364,7 @@
 
     <!------------------------------------------------------------------------------------------------------------------------------------>
     <!-- SECCIÓN DE CONTACTOS -->
-    <footer id="contacto" class="contenedor-de-secciones">
+    <footer id="contacto" class="contenedor-secciones-nav-logotipo-1 contenedor-de-secciones">
         <section class="seccion-contenedora-principal display-flex flex-direction-column align-items-center">
             <!-- Encabezado principal de la sección -->
             <h2>
@@ -390,7 +431,7 @@
                 </label>
 
                 <div>
-                    <input class="position-relative boton-1" type="submit">
+                    <input class="position-relative boton-1" type="submit" value="Enviar">
                 </div>
             </form>
             <!-- Formulario -->

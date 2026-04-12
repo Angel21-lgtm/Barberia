@@ -46,7 +46,7 @@ const innerHTMLCardsSucursales = (contenedor) => {
                                 ${sucursal.textoPrincipal}
                             </p>
                             <div class="display-flex align-items-center justify-content-center">
-                                <a rel="noopener noreferrer" target="_blank" title="${sucursal.title}" class="boton-1 position-relative">
+                                <a rel="noopener noreferrer" target="_blank" title="${sucursal.title}" class="boton-1">
                                     Ir a ubicación
                                 </a>
                             </div>
@@ -104,7 +104,7 @@ const innerHTMLCardsBarberos = (contenedor) => {
 
     backEndBarberos.forEach(card => {
         contenido +=
-            `<div class="vidrio card-barbero display-flex flex-direction-column justify-content-center align-items-center">
+            `<div class="vidrio display-flex align-items-center justify-content-center flex-direction-column">
                 <div class="flex-1">
                     <img style="animation-duration: ${card.tiempoAnimacion}s;" class="imagen-burbuja" src="${card.imgBarbero}" alt="Foto del barbero">
                 </div>
@@ -136,7 +136,7 @@ const innerHTMLCardsBarberos = (contenedor) => {
                     </li>
                 </ul>
                 <div>
-                    <button class="boton-1 position-relative">
+                    <button class="boton-1">
                         CONTACTAR
                     </button>
                 </div>

@@ -1,37 +1,58 @@
 /* ANIMACIONES ESPECIALES DE TODAS LAS SECCIONES */
 
-/* INICIO */
-/* Nav */
-#inicio>nav>div:hover {
-    transform: scale(1.1);
-    content: url("../../img/iconos/logotipo/logotipo-negro.png");
-    cursor: pointer;
-}
-
-#inicio>nav>ul>li>a:hover {
-    color: var(--dorado);
-}
-
-#inicio>nav>ul>li>a:hover::after {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-/* SOBRE NOSOTROS */
-/* Locales cards */
-#sobre-nosotros>section>#cards-sucursales>article:hover {
-    transform: rotateX(8deg);
-}
-
-/* Cards de los barberos */
-#sobre-nosotros>section>#cards-barberos>div:hover {
-    transform: translateY(-5px);
-}
-
 /* Animación redes sociales */
 .red-social>img:hover {
     filter: brightness(0) invert(1);
     transform: scale(1.3);
+}
+
+/* LOAD */
+/* Letras de carga */
+@keyframes letra-load {
+    0% {
+        transform: translateY(6px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-6px);
+        opacity: 0;
+    }
+}
+
+/* Barra de carga */
+@keyframes cargaAnimacion {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* SOBRE NOSOTROS */
+/* Locales cards */
+#sobre-nosotros>section>#cards-sucursales>article:hover {
+    transform: translateY(-8px);
+}
+
+/* Barberos cards */
+#sobre-nosotros>section>#cards-barberos>div:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 /* PORTAFOLIO */
