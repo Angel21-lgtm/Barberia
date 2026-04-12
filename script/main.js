@@ -72,8 +72,12 @@ const main = () => {
 
 window.addEventListener("load", () => {
 
-    const load = document.getElementById("load");
-    load.classList.add("quitar-load");
+    let timer = setTimeout(() => {
+        const contenedorLoad = document.getElementById("load");
+        contenedorLoad.classList.add("quitar-load");
+    }, 3000);
+
+    removeTimeout(timer);
 
     main();
 });
