@@ -77,5 +77,5 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         const contenedorLoad = document.getElementById("load");
         contenedorLoad.classList.add("quitar-load");
-    }, 4000);
+    }, 6000);
 });
