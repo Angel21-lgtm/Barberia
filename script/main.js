@@ -70,7 +70,7 @@ const main = () => {
     visualizarProyecto("transicion-visualizacion-del-proyecto", botonVisualizarProyectoTercerApartado, visualizacionDelProyecto, botonCerrarProyecto, backEndPortafolio.backEndPortafolio[2]);
 
     // ANIMACIONES DEL CURSOR
-    luzNeon();
+    luzNeon("imagen-burbuja");
 }
 
 window.addEventListener("DOMContentLoaded", () => {

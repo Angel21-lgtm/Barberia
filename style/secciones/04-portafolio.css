@@ -65,6 +65,10 @@
     font-weight: 500;
 }
 
+#portafolio>section>.articulo-de-proyectos>div>div>div>ul {
+    gap: 5px;
+}
+
 /* Animación del proyecto completo */
 /* Contenedor del proyecto */
 #visualizacion-del-proyecto {

@@ -2,16 +2,18 @@
 
 // LUZ NEON
 // Función para crear un efecto de luz neón alrededor del cursor
-const luzNeon = () => {
+const luzNeon = (clase) => {
     // Creación del elemento que seguirá al cursor
     const luzNeon = document.createElement("div");
     luzNeon.classList.add("luz-neon");
+    luzNeon.classList.add(clase);
     document.body.appendChild(luzNeon);
 
     // Creación de un span dentro del div para el efecto de luz
     const span = document.createElement("span");
     luzNeon.appendChild(span);
     span.classList.add("luz-neon-span");
+    span.classList.add(clase);
 
     // Evento para seguir el movimiento del mouse y posicionar la luz neón
     document.addEventListener("mousemove", (e) => {
