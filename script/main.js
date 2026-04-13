@@ -17,7 +17,9 @@ import visualizarProyecto from "./secciones/04-portafolio/visualizarProyecto.js"
 import nav from "../librerias/nav/nav.js";
 // Cards
 import cards from "../librerias/cards/cards.js";
-// cursor
+// Cursores
+import luzNeon from "../librerias/cursores/cursores.js";
+
 
 const main = () => {
     // NAV
@@ -68,6 +70,7 @@ const main = () => {
     visualizarProyecto("transicion-visualizacion-del-proyecto", botonVisualizarProyectoTercerApartado, visualizacionDelProyecto, botonCerrarProyecto, backEndPortafolio.backEndPortafolio[2]);
 
     // ANIMACIONES DEL CURSOR
+    luzNeon();
 }
 
 window.addEventListener("DOMContentLoaded", () => {
